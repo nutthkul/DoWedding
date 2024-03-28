@@ -90,9 +90,37 @@
       </v-col>
     </v-row>
 
-    <v-row>
+    <v-container>
+      <swiper
+        :slides-per-view="$vuetify.display.smAndDown ? 1 : 4"
+        :spaceBetween="30"
+        :centeredSlides="false"
+        :autoplay="{
+          delay: 3000,
+          disableOnInteraction: false,
+        }"
+        :navigation="false"
+        :modules="modules"
+        class="mySwiper"
+      >
+        <swiper-slide v-for="(image, index) in images" :key="index">
+          <img
+            :src="image.src"
+            :style="
+              $vuetify.display.smAndDown
+                ? 'width: 335px; height: auto'
+                : $vuetify.display.mdAndDown
+                ? 'width: 200px; height: auto'
+                : 'width: 290px; height: auto'
+            "
+          />
+        </swiper-slide>
+      </swiper>
+    </v-container>
+
+    <v-row class="mt-10">
       <v-col cols="12" md="12" sm="12">
-        <span style="font-size: 40px">พิธีการ/กำหนดการ</span>
+        <span style="font-size: 50px">พิธีการ/กำหนดการ</span>
       </v-col>
 
       <v-col cols="12" md="12" sm="12">
@@ -101,33 +129,59 @@
     </v-row>
 
     <v-container>
-      <v-carousel
-        v-model="currentIndex"
-        :cycle="cycleDuration"
-        :interval="slideInterval"
-        hide-delimiter-background
+      <swiper
+        :slides-per-view="$vuetify.display.smAndDown ? 1 : 4"
+        :spaceBetween="30"
+        :centeredSlides="false"
+        :autoplay="{
+          delay: 2500,
+          disableOnInteraction: false,
+        }"
+        :navigation="false"
+        :modules="modules"
+        class="mySwiper"
       >
-        <v-carousel-item v-for="(image, index) in images" :key="index">
-          <v-img :src="image"></v-img>
-        </v-carousel-item>
-      </v-carousel>
+        <swiper-slide v-for="(image, index) in images1" :key="index">
+          <img
+            :src="image.src"
+            :style="
+              $vuetify.display.smAndDown
+                ? 'width: 335px; height: auto'
+                : $vuetify.display.mdAndDown
+                ? 'width: 200px; height: auto'
+                : 'width: 290px; height: auto'
+            "
+          />
+        </swiper-slide>
+      </swiper>
     </v-container>
-    <!-- <v-row>
-        <v-col cols="3" md="3" sm="0"> </v-col>
-        <v-col cols="6" md="6" sm="12">
-          <span style="font-size: 20px"
-            >นายสุธิพงษ์ ศักดิ์สุภาวัฒนกุล <br />
-            นางประภัสสร ศักดิ์สุภาวัฒนกุล</span
-          >
-        </v-col>
-        <v-col cols="3" md="3" sm="0"> </v-col>
-      </v-row> -->
   </v-responsive>
 </template>
 
 <script>
+import { Virtual } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 export default {
-  components: {},
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+
+  setup() {
+    const slides = Array.from({ length: 1000 }).map(
+      (el, index) => `Slide ${index + 1}`
+    );
+    return {
+      slides,
+      Virtual,
+      modules: [Autoplay, Pagination, Navigation],
+    };
+  },
   data() {
     return {
       countdown: "",
@@ -137,15 +191,158 @@ export default {
       secCount: "",
 
       currentIndex: 0,
-      slideInterval: 5000,
-      images: ["../assets/schedule/Nat1.png", "../assets/schedule/Nat2.png"],
+      images: [
+        {
+          src: new URL("@/assets/slidePic/1.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/2.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/3.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/4.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/5.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/6.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/7.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/8.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/9.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/10.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/11.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/12.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/13.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/14.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/15.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/16.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/17.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/18.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/19.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/20.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/21.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/22.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/23.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/24.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/25.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/26.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/27.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/28.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/29.jpeg", import.meta.url).href,
+        },
+      ],
+      images1: [
+        {
+          src: new URL("@/assets/slidePic/30.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/31.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/32.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/33.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/34.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/35.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/36.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/37.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/38.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/39.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/40.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/41.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/42.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/43.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/44.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/45.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/46.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/47.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/48.jpeg", import.meta.url).href,
+        },
+        {
+          src: new URL("@/assets/slidePic/49.jpeg", import.meta.url).href,
+        },
+      ],
     };
-  },
-
-  computed: {
-    cycleDuration() {
-      return this.images.length * this.slideInterval;
-    },
   },
 
   async created() {
