@@ -12,12 +12,24 @@ export default defineConfig({
   plugins: [
     vue({
       template: { transformAssetUrls },
+      resolve: {
+        alias: {
+          "@": fileURLToPath(new URL("./src", import.meta.url)),
+        },
+      },
+      css: {
+        preprocessorOptions: {
+          scss: {
+            additionalData: `@import "@/src/styles/.index.scss`,
+          },
+        },
+      },
     }),
     // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
     vuetify({
       autoImport: true,
       styles: {
-        configFile: "src/styles/settings.scss",
+        configFile: "src/styles/index.scss",
       },
     }),
     ViteFonts({
