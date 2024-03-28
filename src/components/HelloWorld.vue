@@ -120,7 +120,7 @@
 
     <v-row class="mt-10">
       <v-col cols="12" md="12" sm="12">
-        <span style="font-size: 50px">พิธีการ/กำหนดการ</span>
+        <span style="font-size: 40px"><u>พิธีการ&กำหนดการ</u></span>
       </v-col>
 
       <v-col cols="12" md="12" sm="12">
