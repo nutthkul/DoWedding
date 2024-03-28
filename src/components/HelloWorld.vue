@@ -1,77 +1,79 @@
 <template>
   <v-responsive class="align-center text-center fill-height">
-    <v-row>
-      <v-col cols="12" md="12" sm="12">
-        <v-img
-          src="../assets/schedule/Nat1.png"
-          max-width="1200px"
-          class="mx-auto"
-        ></v-img>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col cols="12" md="6" sm="12">
-        <span style="font-size: 24px">SAVE THE DATE</span>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col cols="12" md="12" sm="12">
-        <span style="font-size: 60px; font-weight: bold">02</span>
-        <v-card
-          :width="$vuetify.display.smAndDown ? '20%' : '10%'"
-          flat
-          class="mx-auto"
-        >
-          <v-divider :thickness="11" color="error"></v-divider>
-        </v-card>
-      </v-col>
-      <v-col cols="12" md="12" sm="12" class="mt-n5">
-        <span style="font-size: 60px; font-weight: bold">06</span>
-        <v-card
-          :width="$vuetify.display.smAndDown ? '20%' : '10%'"
-          flat
-          class="mx-auto"
-        >
-          <!-- <v-divider :thickness="11" color="error"></v-divider> -->
-        </v-card>
-      </v-col>
+    <div>
+      <v-img src="../assets/slidePic/25.jpeg" class="mx-auto"></v-img>
 
-      <v-col cols="12" sm="12">
+      <div class="imgOnTitle">
+        <!-- <span style="font-size: 24px">SAVE THE DATE</span> -->
+
         <div>
-          <span style="font-size: 20px">Remaining</span>
+          <span style="font-size: 26px; font-weight: 900px; color: black"
+            >Remaining</span
+          >
         </div>
-        <div class="mt-5">
-          <v-row>
-            <v-col cols="3" md="3" sm="0"></v-col>
-            <v-col cols="6" md="6" sm="12">
-              <v-row>
-                <v-col cols="6" md="3" sm="6">
-                  <span style="font-size: 40px">{{ dayCount }}</span>
-                  <br />
-                  Days
-                </v-col>
-                <v-col cols="6" md="3" sm="6">
-                  <span style="font-size: 40px">{{ hrCount }}</span>
-                  <br />
-                  Hours
-                </v-col>
-                <v-col cols="6" md="3" sm="6">
-                  <span style="font-size: 40px">{{ minCount }}</span>
-                  <br />
-                  Minutes
-                </v-col>
-                <v-col cols="6" md="3" sm="6">
-                  <span style="font-size: 40px">{{ secCount }}</span>
-                  <br />
-                  Seconds
-                </v-col>
-              </v-row>
-            </v-col>
-            <v-col cols="3" md="3" sm="0"></v-col>
-          </v-row>
+
+        <div class="wrapper_grid">
+          <div class="timer">
+            <span>{{ dayCount }}</span>
+            <br />
+            <small> Days </small>
+          </div>
+          <div class="timer">
+            <span>{{ hrCount }}</span>
+            <br />
+            <small> Hours </small>
+          </div>
+
+          <div class="timer">
+            <span>{{ minCount }}</span>
+            <br />
+            <small> Minutes </small>
+          </div>
+          <div class="timer">
+            <span>{{ secCount }}</span>
+            <br />
+            <small> Seconds </small>
+          </div>
         </div>
-      </v-col>
-    </v-row>
+        <div style="margin-top: 20px">
+          <!-- <div class="font_date">02</div> -->
+          <span
+            :style="
+              $vuetify.display.smAndDown
+                ? ' font-size: 60px; font-weight: bold'
+                : ' font-size: 100px; font-weight: bold'
+            "
+            >02</span
+          >
+          <v-card
+            :width="$vuetify.display.smAndDown ? '20%' : '40%'"
+            flat
+            class="mx-auto"
+          >
+            <v-divider :thickness="11" color="error"></v-divider>
+          </v-card>
+          <!-- <div class="font_date">06</div> -->
+          <span
+            :style="
+              $vuetify.display.smAndDown
+                ? ' font-size: 60px; font-weight: bold'
+                : ' font-size: 100px; font-weight: bold'
+            "
+            >06</span
+          >
+
+          <v-card
+            :width="$vuetify.display.smAndDown ? '20%' : '10%'"
+            flat
+            class="mx-auto"
+          >
+            <!-- <v-divider :thickness="11" color="error"></v-divider> -->
+          </v-card>
+        </div>
+      </div>
+    </div>
+
+    <br />
 
     <v-row>
       <v-col cols="12" sm="12">
@@ -385,3 +387,31 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.imgOnTitle {
+  text-align: center;
+  color: #0f0f0f;
+  font-size: 50px;
+  font-weight: 900;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.8 !important;
+
+  @media only screen and (max-width: 1280px) {
+    top: 7%;
+  }
+}
+
+.wrapper_grid {
+  font-size: 50px;
+  @media only screen and (max-width: 1280px) {
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+  }
+}
+</style>
