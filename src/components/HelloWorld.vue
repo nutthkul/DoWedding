@@ -2,11 +2,15 @@
   <v-responsive class="align-center text-center fill-height">
     <v-row>
       <v-col cols="12" md="12" sm="12">
-        <v-img src="../assets/schedule/Nat1.png"></v-img>
+        <v-img
+          src="../assets/schedule/Nat1.png"
+          max-width="1200px"
+          class="mx-auto"
+        ></v-img>
       </v-col>
     </v-row>
     <v-row>
-      <v-col cols="12" md="4" sm="12">
+      <v-col cols="12" md="6" sm="12">
         <span style="font-size: 24px">SAVE THE DATE</span>
       </v-col>
     </v-row>
@@ -124,7 +128,11 @@
       </v-col>
 
       <v-col cols="12" md="12" sm="12">
-        <v-img src="../assets/schedule/Nat2.png"></v-img>
+        <v-img
+          src="../assets/schedule/Nat2.png"
+          max-width="1200px"
+          class="mx-auto"
+        ></v-img>
       </v-col>
     </v-row>
 
