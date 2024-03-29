@@ -77,14 +77,16 @@
           flat
           class="mx-auto text-start"
         >
-          <div>
-            <span style="font-size: 20px">FOR THE WEDDING OF</span>
-            <br />
-            <br />
-            <span style="font-size: 50px">NUTCHITA & NUTTHAPON</span>
-            <br />
-            <br />
-          </div>
+          <span style="font-size: 20px">FOR THE WEDDING OF</span>
+          <br />
+          <br />
+          <span style="font-size: 50px"
+            >NUTCHITA & <br />
+            NUTTHAPON</span
+          >
+          <br />
+          <br />
+          <span style="font-size: 20px">ณ สมาคมชาวไร่อ้อย เขต 6 กำแพงเพชร</span>
         </v-card>
       </v-col>
     </v-row> -->

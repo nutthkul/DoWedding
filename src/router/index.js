@@ -27,6 +27,11 @@ const routes = [
     name: "Homepage",
     component: () => import("@/components/HelloWorld.vue"),
   },
+  {
+    path: "/test",
+    name: "test",
+    component: () => import("@/components/test.vue"),
+  },
 ];
 
 const router = createRouter({
