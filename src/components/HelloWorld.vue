@@ -1,11 +1,9 @@
 <template>
   <v-responsive class="align-center text-center fill-height">
     <div>
-      <v-img src="../assets/slidePic/25.jpeg" class="mx-auto"></v-img>
+      <v-img src="../assets/Banner.jpeg" class="mx-auto"></v-img>
 
-      <div class="imgOnTitle">
-        <!-- <span style="font-size: 24px">SAVE THE DATE</span> -->
-
+      <!-- <div class="imgOnTitle">
         <div>
           <span style="font-size: 26px; font-weight: 900px; color: black"
             >Remaining</span
@@ -36,7 +34,6 @@
           </div>
         </div>
         <div style="margin-top: 20px">
-          <!-- <div class="font_date">02</div> -->
           <span
             :style="
               $vuetify.display.smAndDown
@@ -52,7 +49,6 @@
           >
             <v-divider :thickness="11" color="error"></v-divider>
           </v-card>
-          <!-- <div class="font_date">06</div> -->
           <span
             :style="
               $vuetify.display.smAndDown
@@ -67,15 +63,14 @@
             flat
             class="mx-auto"
           >
-            <!-- <v-divider :thickness="11" color="error"></v-divider> -->
           </v-card>
         </div>
-      </div>
+      </div> -->
     </div>
 
-    <br />
+    <v-img src="../assets/requestPresence.png" class="mx-auto"></v-img>
 
-    <v-row>
+    <!-- <v-row>
       <v-col cols="12" sm="12">
         <v-card
           :width="$vuetify.display.smAndDown ? '80%' : '40%'"
@@ -94,37 +89,25 @@
           <span style="font-size: 20px">ณ สมาคมชาวไร่อ้อย เขต 6 กำแพงเพชร</span>
         </v-card>
       </v-col>
-    </v-row>
+    </v-row> -->
 
-    <v-container>
-      <swiper
-        :slides-per-view="$vuetify.display.smAndDown ? 1 : 4"
-        :spaceBetween="30"
-        :centeredSlides="false"
-        :autoplay="{
-          delay: 3000,
-          disableOnInteraction: false,
-        }"
-        :navigation="false"
-        :modules="modules"
-        class="mySwiper"
-      >
-        <swiper-slide v-for="(image, index) in images" :key="index">
-          <img
-            :src="image.src"
-            :style="
-              $vuetify.display.smAndDown
-                ? 'width: 335px; height: auto'
-                : $vuetify.display.mdAndDown
-                ? 'width: 200px; height: auto'
-                : 'width: 290px; height: auto'
-            "
-          />
-        </swiper-slide>
-      </swiper>
-    </v-container>
+    <v-img src="../assets/profile.jpeg" class="mx-auto"></v-img>
 
-    <v-row class="mt-10">
+    <v-img
+      v-if="!$vuetify.display.smAndDown"
+      src="../assets/specialDays.png"
+      class="mx-auto"
+    ></v-img>
+
+    <v-img
+      v-if="$vuetify.display.smAndDown"
+      src="../assets/specialDays1.png"
+      class="mx-auto"
+    ></v-img>
+
+    <v-img src="../assets/dressCode.png" class="mx-auto"></v-img>
+
+    <!-- <v-row class="mt-10">
       <v-col cols="12" md="12" sm="12">
         <span style="font-size: 40px"><u>พิธีการ&กำหนดการ</u></span>
       </v-col>
@@ -136,35 +119,83 @@
           class="mx-auto"
         ></v-img>
       </v-col>
-    </v-row>
+    </v-row> -->
 
-    <v-container>
+    <div class="pa-16">
+      <span
+        :style="
+          $vuetify.display.smAndDown
+            ? ' font-size: 18px; font-weight: 400'
+            : ' font-size: 28px; font-weight: 400'
+        "
+        >OUR WEDDING GALLERY</span
+      >
+    </div>
+
+    <div class="mb-10">
       <swiper
-        :slides-per-view="$vuetify.display.smAndDown ? 1 : 4"
-        :spaceBetween="30"
+        :slides-per-view="$vuetify.display.smAndDown ? 4 : 5"
+        :spaceBetween="10"
         :centeredSlides="false"
         :autoplay="{
-          delay: 2500,
+          delay: 0,
           disableOnInteraction: false,
         }"
         :navigation="false"
         :modules="modules"
         class="mySwiper"
+        speed="9000"
       >
-        <swiper-slide v-for="(image, index) in images1" :key="index">
+        <swiper-slide v-for="(image, index) in images" :key="index">
           <img
             :src="image.src"
             :style="
               $vuetify.display.smAndDown
-                ? 'width: 335px; height: auto'
+                ? 'width: 100%; height: auto'
                 : $vuetify.display.mdAndDown
-                ? 'width: 200px; height: auto'
-                : 'width: 290px; height: auto'
+                ? 'width: 100%; height: auto'
+                : 'width: 100%; height: auto'
             "
           />
         </swiper-slide>
       </swiper>
-    </v-container>
+    </div>
+
+    <div>
+      <a
+        href="https://maps.app.goo.gl/JNRwjb3ctpqVXBKK8?g_st=il"
+        target="_blank"
+      >
+        <v-img src="../assets/mapKhampheang6.jpeg" class="mx-auto"></v-img>
+      </a>
+    </div>
+
+    <v-card width="auto" class="pa-6" flat color="#F5F5F5">
+      <a
+        href="https://maps.app.goo.gl/JNRwjb3ctpqVXBKK8?g_st=il"
+        target="_blank"
+        style="text-decoration: none; color: #000"
+      >
+        <div class="mt-3 mb-5">
+          <span
+            :style="
+              $vuetify.display.smAndDown
+                ? 'font-size: 14px'
+                : 'font-size: 24px; height: auto'
+            "
+          >
+            Canegrowers Association of Region 6 Kamphaengphet <br />
+            สมาคมชาวไร่อ้อยเขต 6 กำแพงเพชร
+          </span>
+        </div>
+        <v-img
+          :width="$vuetify.display.smAndDown ? '30%' : '15%'"
+          height="auto"
+          src="../assets/qrKham6.png"
+          class="mx-auto"
+        ></v-img>
+      </a>
+    </v-card>
   </v-responsive>
 </template>
 
@@ -186,6 +217,7 @@ export default {
     const slides = Array.from({ length: 1000 }).map(
       (el, index) => `Slide ${index + 1}`
     );
+
     return {
       slides,
       Virtual,
@@ -271,9 +303,9 @@ export default {
         {
           src: new URL("@/assets/slidePic/23.jpeg", import.meta.url).href,
         },
-        {
-          src: new URL("@/assets/slidePic/24.jpeg", import.meta.url).href,
-        },
+        // {
+        //   src: new URL("@/assets/slidePic/24.jpeg", import.meta.url).href,
+        // },
         {
           src: new URL("@/assets/slidePic/25.jpeg", import.meta.url).href,
         },
@@ -289,8 +321,6 @@ export default {
         {
           src: new URL("@/assets/slidePic/29.jpeg", import.meta.url).href,
         },
-      ],
-      images1: [
         {
           src: new URL("@/assets/slidePic/30.jpeg", import.meta.url).href,
         },
