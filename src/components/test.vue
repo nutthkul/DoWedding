@@ -122,7 +122,7 @@
     <v-card
       :class="$vuetify.display.smAndDown ? 'pa-3' : 'pa-10'"
       style="background-color: #f6f6f6"
-      flat=""
+      flat
     >
       <v-row class="mt-4 mb-4">
         <v-col cols="6" class="ml-2">
