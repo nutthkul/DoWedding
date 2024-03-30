@@ -72,7 +72,7 @@
       <br />
       <div class="celeb_txt">TO CELEBRATE OUR MARRIAGE</div>
       <br />
-      <div class="request_txt">02 JUNE 2024</div>
+      <div class="request_txt mt-n5">02 JUNE 2024</div>
       <br />
       <div class="chapter_txt">#DONUTNEWCHAPTER</div>
     </div>
@@ -99,22 +99,58 @@
         </v-card>
       </v-col>
     </v-row> -->
-    <div class="column_card">
+    <!-- <div class="column_card">
       <div class="wrapper_card">
         <div class="img_profile">
-          <div class="request_txt mt-10 mb-10">Nutthapon Kulkrittayarat</div>
+          <div class="name_profile_txt mt-10 mb-10">
+            Nutthapon Kulkrittayarat
+          </div>
           <img src="/src/assets/slidePic/35.jpeg" />
         </div>
       </div>
 
       <div class="wrapper_card">
         <div class="img_profile">
-          <div class="request_txt mt-10 mb-10">Nutchita Saksupawattanakul</div>
+          <div class="name_profile_txt mt-10 mb-10">
+            Nutchita Saksupawattanakul
+          </div>
           <img src="/src/assets/slidePic/36.jpeg" />
         </div>
       </div>
-    </div>
-    <v-img src="../assets/profile.jpeg" class="mx-auto"></v-img>
+    </div> -->
+
+    <v-card
+      :class="$vuetify.display.smAndDown ? 'pa-3' : 'pa-10'"
+      style="background-color: #f6f6f6"
+      flat=""
+    >
+      <v-row class="mt-4 mb-4">
+        <v-col cols="6" class="ml-2">
+          <v-card
+            :class="$vuetify.display.smAndDown ? 'pa-2' : 'pa-6'"
+            rounded="0"
+            height="100%"
+            elevation="3"
+          >
+            <span class="name_profile_txt">Nutthapon Kulkrittayarat</span>
+            <v-img src="/src/assets/slidePic/35.jpeg" />
+          </v-card>
+        </v-col>
+        <v-col cols="6" class="ml-n2">
+          <v-card
+            :class="$vuetify.display.smAndDown ? 'pa-2' : 'pa-6'"
+            rounded="0"
+            height="100%"
+            elevation="3"
+          >
+            <span class="name_profile_txt">Nutchita Saksupawattanakul</span>
+            <v-img src="/src/assets/slidePic/36.jpeg" />
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-card>
+
+    <!-- <v-img src="../assets/profile.jpeg" class="mx-auto"></v-img> -->
 
     <v-img
       v-if="!$vuetify.display.smAndDown"
@@ -168,7 +204,7 @@
         :navigation="false"
         :modules="modules"
         class="mySwiper"
-        speed="5000"
+        speed="2000"
       >
         <swiper-slide v-for="(image, index) in images" :key="index">
           <img
@@ -482,37 +518,50 @@ export default {
 .wrapper_presence {
   font-family: Nanum Myeongjo;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 15%;
   margin-bottom: 50px;
 }
 
 .request_txt {
-  font-size: 40px;
+  font-size: 3vw;
   font-weight: 600;
   font-family: Nanum Myeongjo;
 
-  @media only screen and (max-width: 1280px) {
-    font-size: 14px;
+  /* @media only screen and (max-width: 1280px) {
+    font-size: 24px;
   }
+  @media only screen and (max-width: 600px) {
+    font-size: 14px;
+  } */
 }
 
 .celeb_txt {
-  font-size: 80px;
+  font-size: 5vw;
   font-weight: 700;
-  @media only screen and (max-width: 1280px) {
+  /* @media only screen and (max-width: 1280px) {
     font-size: 20px;
-  }
+  } */
 }
 
 .chapter_txt {
-  font-size: 30px;
+  font-size: 1.5vw;
   font-weight: 500;
-  margin-top: 150px;
+  margin-top: 5%;
 
-  @media only screen and (max-width: 1280px) {
+  /* @media only screen and (max-width: 1280px) {
     font-size: 12px;
     margin-top: auto;
-  }
+  } */
+}
+
+.name_profile_txt {
+  font-size: 2.7vw;
+  font-weight: 300;
+
+  /* @media only screen and (max-width: 1280px) {
+    font-size: 12px;
+    margin-top: auto;
+  } */
 }
 
 .column_card {
