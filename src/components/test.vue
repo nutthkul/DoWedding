@@ -150,9 +150,57 @@
       </v-row>
     </v-card>
 
+    <div class="wrapper_presence">
+      <div class="request_txt">HERE'S A SNEAK PEEK OF</div>
+      <br />
+      <div class="celeb_txt">OUR SPECIAL DAY'S <br />SHELDULE</div>
+
+      <div class="wrapper_grid mt-16 mb-16">
+        <div class="img_icon">
+          <img src="/src/assets/iconWedding1.png" />
+          <br />
+          <div class="icon_txt">
+            08.09 AM
+            <br />
+            Khan maak Procession
+          </div>
+        </div>
+
+        <div class="img_icon">
+          <img src="/src/assets/iconWedding2.png" />
+          <br />
+          <div class="icon_txt">
+            09.09 AM
+            <br />
+            The Egagement
+          </div>
+        </div>
+
+        <div class="img_icon">
+          <img src="/src/assets/iconWedding3.png" />
+          <br />
+          <div class="icon_txt">
+            09.39 AM
+            <br />
+            Tea Ceremony
+          </div>
+        </div>
+
+        <div class="img_icon">
+          <img src="/src/assets/iconWedding4.png" />
+          <br />
+          <div class="icon_txt">
+            18.00 AM
+            <br />
+            Wedding Ceremony
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- <v-img src="../assets/profile.jpeg" class="mx-auto"></v-img> -->
 
-    <v-img
+    <!-- <v-img
       v-if="!$vuetify.display.smAndDown"
       src="../assets/specialDays.png"
       class="mx-auto"
@@ -162,7 +210,7 @@
       v-if="$vuetify.display.smAndDown"
       src="../assets/specialDays1.png"
       class="mx-auto"
-    ></v-img>
+    ></v-img> -->
 
     <v-img src="../assets/dressCode.png" class="mx-auto"></v-img>
 
@@ -187,7 +235,7 @@
             ? ' font-size: 18px; font-weight: 400'
             : ' font-size: 38px; font-weight: 400'
         "
-        style="font-family: 'Nanum Myeongjo', serif"
+        style="font-family: 'Nanum Myeongjo', serif; font-weight: 500"
         >OUR WEDDING GALLERY</span
       >
     </div>
@@ -505,20 +553,42 @@ export default {
   }
 }
 
-.wrapper_grid {
-  font-size: 50px;
+.img_icon img {
+  padding: auto;
+  height: 120px;
+  margin-top: 20px;
+  margin-right: 10px;
+
   @media only screen and (max-width: 1280px) {
-    font-size: 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 15px;
+    height: 80px;
+  }
+}
+
+.icon_txt {
+  font-size: 30px;
+  font-weight: 600;
+
+  @media only screen and (max-width: 1280px) {
+    font-size: 15px;
+  }
+}
+
+.wrapper_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px !important;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+  @media only screen and (max-width: 1280px) {
+    display: block;
   }
 }
 
 .wrapper_presence {
   font-family: Nanum Myeongjo;
   text-align: center;
-  margin-top: 15%;
+  margin-top: 10%;
   margin-bottom: 50px;
 }
 
@@ -545,7 +615,7 @@ export default {
 
 .chapter_txt {
   font-size: 1.5vw;
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 5%;
 
   /* @media only screen and (max-width: 1280px) {
