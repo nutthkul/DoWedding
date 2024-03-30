@@ -132,7 +132,9 @@
             height="100%"
             elevation="3"
           >
-            <span class="name_profile_txt">Nutthapon Kulkrittayarat</span>
+            <span class="name_profile_txt mt-10 mb-10"
+              >Nutthapon Kulkrittayarat</span
+            >
             <v-img src="/src/assets/slidePic/35.jpeg" />
           </v-card>
         </v-col>
@@ -143,7 +145,9 @@
             height="100%"
             elevation="3"
           >
-            <span class="name_profile_txt">Nutchita Saksupawattanakul</span>
+            <span class="name_profile_txt mt-10 mb-10"
+              >Nutchita Saksupawattanakul</span
+            >
             <v-img src="/src/assets/slidePic/36.jpeg" />
           </v-card>
         </v-col>
@@ -626,7 +630,8 @@ export default {
 
 .name_profile_txt {
   font-size: 2.7vw;
-  font-weight: 300;
+  font-weight: 580;
+  font-family: Nanum Myeongjo;
 
   /* @media only screen and (max-width: 1280px) {
     font-size: 12px;
