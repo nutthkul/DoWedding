@@ -2,122 +2,109 @@
   <v-responsive class="align-center text-center fill-height">
     <div>
       <v-img src="../assets/Banner.jpeg" class="mx-auto"></v-img>
-
-      <!-- <div class="imgOnTitle">
-        <div>
-          <span style="font-size: 26px; font-weight: 900px; color: black"
-            >Remaining</span
-          >
-        </div>
-
-        <div class="wrapper_grid">
-          <div class="timer">
-            <span>{{ dayCount }}</span>
-            <br />
-            <small> Days </small>
-          </div>
-          <div class="timer">
-            <span>{{ hrCount }}</span>
-            <br />
-            <small> Hours </small>
-          </div>
-
-          <div class="timer">
-            <span>{{ minCount }}</span>
-            <br />
-            <small> Minutes </small>
-          </div>
-          <div class="timer">
-            <span>{{ secCount }}</span>
-            <br />
-            <small> Seconds </small>
-          </div>
-        </div>
-        <div style="margin-top: 20px">
-          <span
-            :style="
-              $vuetify.display.smAndDown
-                ? ' font-size: 60px; font-weight: bold'
-                : ' font-size: 100px; font-weight: bold'
-            "
-            >02</span
-          >
-          <v-card
-            :width="$vuetify.display.smAndDown ? '20%' : '40%'"
-            flat
-            class="mx-auto"
-          >
-            <v-divider :thickness="11" color="error"></v-divider>
-          </v-card>
-          <span
-            :style="
-              $vuetify.display.smAndDown
-                ? ' font-size: 60px; font-weight: bold'
-                : ' font-size: 100px; font-weight: bold'
-            "
-            >06</span
-          >
-
-          <v-card
-            :width="$vuetify.display.smAndDown ? '20%' : '10%'"
-            flat
-            class="mx-auto"
-          >
-          </v-card>
-        </div>
-      </div> -->
+    </div>
+    <div class="wrapper_presence">
+      <div class="request_txt mt-15">Request the honer of your presence</div>
+      <br />
+      <div class="celeb_txt">TO CELEBRATE OUR MARRIAGE</div>
+      <br />
+      <div class="request_txt mt-n5">02 JUNE 2024</div>
+      <br />
+      <div class="chapter_txt">#DONUTNEWCHAPTER</div>
     </div>
 
-    <v-img src="../assets/requestPresence.png" class="mx-auto"></v-img>
+    <v-card
+      :class="$vuetify.display.smAndDown ? 'pa-3' : 'pa-10'"
+      style="background-color: #f6f6f6"
+      flat
+    >
+      <v-row class="mt-4 mb-4">
+        <v-col cols="6" class="ml-2">
+          <v-card
+            :class="$vuetify.display.smAndDown ? 'pa-2' : 'pa-6'"
+            rounded="0"
+            height="100%"
+            elevation="3"
+          >
+            <span class="name_profile_txt mt-10 mb-10"
+              >Nutthapon Kulkrittayarat</span
+            >
+            <v-img src="/src/assets/slidePic/35.jpeg" />
+          </v-card>
+        </v-col>
+        <v-col cols="6" class="ml-n2">
+          <v-card
+            :class="$vuetify.display.smAndDown ? 'pa-2' : 'pa-6'"
+            rounded="0"
+            height="100%"
+            elevation="3"
+          >
+            <span class="name_profile_txt mt-10 mb-10"
+              >Nutchita Saksupawattanakul</span
+            >
+            <v-img src="/src/assets/slidePic/36.jpeg" />
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-card>
 
-    <!-- <v-row>
-      <v-col cols="12" sm="12">
-        <v-card
-          :width="$vuetify.display.smAndDown ? '80%' : '40%'"
-          flat
-          class="mx-auto text-start"
-        >
-          <div>
-            <span style="font-size: 20px">FOR THE WEDDING OF</span>
+    <div class="wrapper_presence">
+      <div class="request_txt">HERE'S A SNEAK PEEK OF</div>
+      <br />
+      <div class="celeb_txt">OUR SPECIAL DAY'S <br />SHELDULE</div>
+
+      <div class="wrapper_grid mb-16 pa-10">
+        <div class="img_icon">
+          <img src="/src/assets/iconWedding1.png" />
+          <br />
+          <div class="icon_txt">
+            08.09 AM
             <br />
-            <br />
-            <span style="font-size: 50px">NUTCHITA & NUTTHAPON</span>
-            <br />
-            <br />
+            Khan maak Procession
           </div>
-        </v-card>
-      </v-col>
-    </v-row> -->
+        </div>
 
-    <v-img src="../assets/profile.jpeg" class="mx-auto"></v-img>
+        <div class="img_icon">
+          <img src="/src/assets/iconWedding2.png" />
+          <br />
+          <div class="icon_txt">
+            09.09 AM
+            <br />
+            The Egagement
+          </div>
+        </div>
 
-    <v-img
-      v-if="!$vuetify.display.smAndDown"
-      src="../assets/specialDays.png"
-      class="mx-auto"
-    ></v-img>
+        <div class="img_icon">
+          <img src="/src/assets/iconWedding3.png" />
+          <br />
+          <div class="icon_txt">
+            09.39 AM
+            <br />
+            Tea Ceremony
+          </div>
+        </div>
 
-    <v-img
-      v-if="$vuetify.display.smAndDown"
-      src="../assets/specialDays1.png"
-      class="mx-auto"
-    ></v-img>
+        <div class="img_icon">
+          <img src="/src/assets/iconWedding4.png" />
+          <br />
+          <div class="icon_txt">
+            18.00 AM
+            <br />
+            Wedding Ceremony
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <v-img src="../assets/dressCode.png" class="mx-auto"></v-img>
-
-    <!-- <v-row class="mt-10">
-      <v-col cols="12" md="12" sm="12">
-        <span style="font-size: 40px"><u>พิธีการ&กำหนดการ</u></span>
-      </v-col>
-
-      <v-col cols="12" md="12" sm="12">
-        <v-img
-          src="../assets/schedule/Nat2.png"
-          max-width="1200px"
-          class="mx-auto"
-        ></v-img>
-      </v-col>
-    </v-row> -->
+    <v-card
+      :class="$vuetify.display.smAndDown ? 'pa-3' : 'pa-10'"
+      style="background-color: #f6f6f6"
+      flat
+    >
+      <div class="wedding_theme_txt">WEDDING THEME</div>
+      <div class="dress_code_txt">#DRESS CODE</div>
+      <v-img src="../assets/dress_code_item.png" class="mx-auto mt-6"></v-img>
+    </v-card>
 
     <div class="pa-16">
       <span
@@ -126,7 +113,7 @@
             ? ' font-size: 18px; font-weight: 400'
             : ' font-size: 38px; font-weight: 400'
         "
-        style="font-family: 'Nanum Myeongjo', serif"
+        style="font-family: 'Nanum Myeongjo', serif; font-weight: 500"
         >OUR WEDDING GALLERY</span
       >
     </div>
@@ -143,7 +130,7 @@
         :navigation="false"
         :modules="modules"
         class="mySwiper"
-        speed="9000"
+        speed="2000"
       >
         <swiper-slide v-for="(image, index) in images" :key="index">
           <img
@@ -444,13 +431,134 @@ export default {
   }
 }
 
-.wrapper_grid {
-  font-size: 50px;
+.img_icon img {
+  padding: auto;
+  height: 120px;
+  margin-top: 20px;
+  margin-right: 10px;
+
   @media only screen and (max-width: 1280px) {
-    font-size: 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 15px;
+    height: 80px;
   }
+}
+
+.icon_txt {
+  font-size: 2.3vw;
+  font-weight: 600;
+
+  @media only screen and (max-width: 1280px) {
+    font-size: 3vw;
+  }
+}
+
+.wrapper_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px !important;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+  @media only screen and (max-width: 1280px) {
+    display: block;
+  }
+}
+
+.wrapper_presence {
+  font-family: Nanum Myeongjo;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 50px;
+}
+
+.request_txt {
+  font-size: 3vw;
+  font-weight: 600;
+  font-family: Nanum Myeongjo;
+
+  /* @media only screen and (max-width: 1280px) {
+    font-size: 24px;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 14px;
+  } */
+}
+
+.wedding_theme_txt {
+  font-size: 1.7vw;
+  font-weight: 400;
+  font-family: Nanum Myeongjo;
+}
+
+.dress_code_txt {
+  font-size: 4.7vw;
+  font-weight: 600;
+  font-family: Nanum Myeongjo;
+}
+
+.celeb_txt {
+  font-size: 5vw;
+  font-weight: 700;
+  /* @media only screen and (max-width: 1280px) {
+    font-size: 20px;
+  } */
+}
+
+.chapter_txt {
+  font-size: 1.5vw;
+  font-weight: 600;
+  margin-top: 5%;
+
+  /* @media only screen and (max-width: 1280px) {
+    font-size: 12px;
+    margin-top: auto;
+  } */
+}
+
+.name_profile_txt {
+  font-size: 2.7vw;
+  font-weight: 580;
+  font-family: Nanum Myeongjo;
+
+  /* @media only screen and (max-width: 1280px) {
+    font-size: 12px;
+    margin-top: auto;
+  } */
+}
+
+.column_card {
+  display: grid;
+  width: 100%;
+  height: auto;
+  align-content: space-evenly;
+  padding: 30px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px !important;
+
+  padding-top: 0px !important;
+
+  @media screen and (max-width: 1280px) {
+    gap: 10px !important;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.wrapper_card {
+  width: 100%;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  padding: auto;
+
+  border: 1px solid #f0f0f0;
+  height: auto !important;
+
+  box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16),
+    0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+}
+
+.img_profile {
+  height: auto;
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  margin-bottom: 30px;
 }
 </style>

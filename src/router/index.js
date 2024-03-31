@@ -25,7 +25,7 @@ const routes = [
   {
     path: "/",
     name: "Homepage",
-    component: () => import("@/components/HelloWorld.vue"),
+    component: () => import("@/components/DoWedding.vue"),
   },
   {
     path: "/test",

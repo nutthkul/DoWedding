@@ -67,17 +67,8 @@
         </div>
       </div> -->
     </div>
-    <div class="wrapper_presence">
-      <div class="request_txt mt-15">Request the honer of your presence</div>
-      <br />
-      <div class="celeb_txt">TO CELEBRATE OUR MARRIAGE</div>
-      <br />
-      <div class="request_txt mt-n5">02 JUNE 2024</div>
-      <br />
-      <div class="chapter_txt">#DONUTNEWCHAPTER</div>
-    </div>
 
-    <!-- <v-img src="../assets/requestPresence.png" class="mx-auto"></v-img> -->
+    <v-img src="../assets/requestPresence.png" class="mx-auto"></v-img>
 
     <!-- <v-row>
       <v-col cols="12" sm="12">
@@ -86,125 +77,21 @@
           flat
           class="mx-auto text-start"
         >
-          <span style="font-size: 20px">FOR THE WEDDING OF</span>
-          <br />
-          <br />
-          <span style="font-size: 50px"
-            >NUTCHITA & <br />
-            NUTTHAPON</span
-          >
-          <br />
-          <br />
-          <span style="font-size: 20px">ณ สมาคมชาวไร่อ้อย เขต 6 กำแพงเพชร</span>
+          <div>
+            <span style="font-size: 20px">FOR THE WEDDING OF</span>
+            <br />
+            <br />
+            <span style="font-size: 50px">NUTCHITA & NUTTHAPON</span>
+            <br />
+            <br />
+          </div>
         </v-card>
       </v-col>
     </v-row> -->
-    <!-- <div class="column_card">
-      <div class="wrapper_card">
-        <div class="img_profile">
-          <div class="name_profile_txt mt-10 mb-10">
-            Nutthapon Kulkrittayarat
-          </div>
-          <img src="/src/assets/slidePic/35.jpeg" />
-        </div>
-      </div>
 
-      <div class="wrapper_card">
-        <div class="img_profile">
-          <div class="name_profile_txt mt-10 mb-10">
-            Nutchita Saksupawattanakul
-          </div>
-          <img src="/src/assets/slidePic/36.jpeg" />
-        </div>
-      </div>
-    </div> -->
+    <v-img src="../assets/profile.jpeg" class="mx-auto"></v-img>
 
-    <v-card
-      :class="$vuetify.display.smAndDown ? 'pa-3' : 'pa-10'"
-      style="background-color: #f6f6f6"
-      flat
-    >
-      <v-row class="mt-4 mb-4">
-        <v-col cols="6" class="ml-2">
-          <v-card
-            :class="$vuetify.display.smAndDown ? 'pa-2' : 'pa-6'"
-            rounded="0"
-            height="100%"
-            elevation="3"
-          >
-            <span class="name_profile_txt mt-10 mb-10"
-              >Nutthapon Kulkrittayarat</span
-            >
-            <v-img src="/src/assets/slidePic/35.jpeg" />
-          </v-card>
-        </v-col>
-        <v-col cols="6" class="ml-n2">
-          <v-card
-            :class="$vuetify.display.smAndDown ? 'pa-2' : 'pa-6'"
-            rounded="0"
-            height="100%"
-            elevation="3"
-          >
-            <span class="name_profile_txt mt-10 mb-10"
-              >Nutchita Saksupawattanakul</span
-            >
-            <v-img src="/src/assets/slidePic/36.jpeg" />
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-card>
-
-    <div class="wrapper_presence">
-      <div class="request_txt">HERE'S A SNEAK PEEK OF</div>
-      <br />
-      <div class="celeb_txt">OUR SPECIAL DAY'S <br />SHELDULE</div>
-
-      <div class="wrapper_grid mt-16 mb-16">
-        <div class="img_icon">
-          <img src="/src/assets/iconWedding1.png" />
-          <br />
-          <div class="icon_txt">
-            08.09 AM
-            <br />
-            Khan maak Procession
-          </div>
-        </div>
-
-        <div class="img_icon">
-          <img src="/src/assets/iconWedding2.png" />
-          <br />
-          <div class="icon_txt">
-            09.09 AM
-            <br />
-            The Egagement
-          </div>
-        </div>
-
-        <div class="img_icon">
-          <img src="/src/assets/iconWedding3.png" />
-          <br />
-          <div class="icon_txt">
-            09.39 AM
-            <br />
-            Tea Ceremony
-          </div>
-        </div>
-
-        <div class="img_icon">
-          <img src="/src/assets/iconWedding4.png" />
-          <br />
-          <div class="icon_txt">
-            18.00 AM
-            <br />
-            Wedding Ceremony
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- <v-img src="../assets/profile.jpeg" class="mx-auto"></v-img> -->
-
-    <!-- <v-img
+    <v-img
       v-if="!$vuetify.display.smAndDown"
       src="../assets/specialDays.png"
       class="mx-auto"
@@ -214,7 +101,7 @@
       v-if="$vuetify.display.smAndDown"
       src="../assets/specialDays1.png"
       class="mx-auto"
-    ></v-img> -->
+    ></v-img>
 
     <v-img src="../assets/dressCode.png" class="mx-auto"></v-img>
 
@@ -239,7 +126,7 @@
             ? ' font-size: 18px; font-weight: 400'
             : ' font-size: 38px; font-weight: 400'
         "
-        style="font-family: 'Nanum Myeongjo', serif; font-weight: 500"
+        style="font-family: 'Nanum Myeongjo', serif"
         >OUR WEDDING GALLERY</span
       >
     </div>
@@ -557,122 +444,13 @@ export default {
   }
 }
 
-.img_icon img {
-  padding: auto;
-  height: 120px;
-  margin-top: 20px;
-  margin-right: 10px;
-
-  @media only screen and (max-width: 1280px) {
-    height: 80px;
-  }
-}
-
-.icon_txt {
-  font-size: 30px;
-  font-weight: 600;
-
-  @media only screen and (max-width: 1280px) {
-    font-size: 15px;
-  }
-}
-
 .wrapper_grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 30px !important;
-  margin-left: 20px;
-  margin-right: 20px;
-  justify-content: center;
+  font-size: 50px;
   @media only screen and (max-width: 1280px) {
-    display: block;
-  }
-}
-
-.wrapper_presence {
-  font-family: Nanum Myeongjo;
-  text-align: center;
-  margin-top: 10%;
-  margin-bottom: 50px;
-}
-
-.request_txt {
-  font-size: 3vw;
-  font-weight: 600;
-  font-family: Nanum Myeongjo;
-
-  /* @media only screen and (max-width: 1280px) {
     font-size: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
   }
-  @media only screen and (max-width: 600px) {
-    font-size: 14px;
-  } */
-}
-
-.celeb_txt {
-  font-size: 5vw;
-  font-weight: 700;
-  /* @media only screen and (max-width: 1280px) {
-    font-size: 20px;
-  } */
-}
-
-.chapter_txt {
-  font-size: 1.5vw;
-  font-weight: 600;
-  margin-top: 5%;
-
-  /* @media only screen and (max-width: 1280px) {
-    font-size: 12px;
-    margin-top: auto;
-  } */
-}
-
-.name_profile_txt {
-  font-size: 2.7vw;
-  font-weight: 580;
-  font-family: Nanum Myeongjo;
-
-  /* @media only screen and (max-width: 1280px) {
-    font-size: 12px;
-    margin-top: auto;
-  } */
-}
-
-.column_card {
-  display: grid;
-  width: 100%;
-  height: auto;
-  align-content: space-evenly;
-  padding: 30px;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px !important;
-
-  padding-top: 0px !important;
-
-  @media screen and (max-width: 1280px) {
-    gap: 10px !important;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.wrapper_card {
-  width: 100%;
-  margin-bottom: 50px;
-  border-radius: 8px;
-  padding: auto;
-
-  border: 1px solid #f0f0f0;
-  height: auto !important;
-
-  box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16),
-    0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
-}
-
-.img_profile {
-  height: auto;
-  border-top-left-radius: 8px !important;
-  border-top-right-radius: 8px !important;
-  margin-bottom: 30px;
 }
 </style>
