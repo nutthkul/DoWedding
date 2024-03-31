@@ -101,9 +101,12 @@
       style="background-color: #f6f6f6"
       flat
     >
-      <div class="wedding_theme_txt">WEDDING THEME</div>
+      <div class="wedding_theme_txt mt-10">WEDDING THEME</div>
       <div class="dress_code_txt">#DRESS CODE</div>
-      <v-img src="../assets/dress_code_item.png" class="mx-auto mt-6"></v-img>
+      <v-img
+        src="../assets/dress_code_item.png"
+        class="mx-auto mt-6 mb-10"
+      ></v-img>
     </v-card>
 
     <div class="pa-16">
