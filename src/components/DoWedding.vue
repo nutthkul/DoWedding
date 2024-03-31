@@ -475,24 +475,27 @@ export default {
   font-weight: 600;
   font-family: Nanum Myeongjo;
 
-  /* @media only screen and (max-width: 1280px) {
-    font-size: 24px;
+  @media only screen and (max-width: 1280px) {
+    font-size: 4vw;
   }
-  @media only screen and (max-width: 600px) {
-    font-size: 14px;
-  } */
 }
 
 .wedding_theme_txt {
   font-size: 1.7vw;
   font-weight: 400;
   font-family: Nanum Myeongjo;
+  @media only screen and (max-width: 1280px) {
+    font-size: 3vw;
+  }
 }
 
 .dress_code_txt {
   font-size: 4.7vw;
   font-weight: 600;
   font-family: Nanum Myeongjo;
+  @media only screen and (max-width: 1280px) {
+    font-size: 6vw;
+  }
 }
 
 .celeb_txt {
@@ -508,10 +511,10 @@ export default {
   font-weight: 600;
   margin-top: 5%;
 
-  /* @media only screen and (max-width: 1280px) {
-    font-size: 12px;
+  @media only screen and (max-width: 1280px) {
+    font-size: 2.5vw;
     margin-top: auto;
-  } */
+  }
 }
 
 .name_profile_txt {
