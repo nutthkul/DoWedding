@@ -10,7 +10,7 @@
       <br />
       <div class="request_txt mt-n5">02 JUNE 2024</div>
       <br />
-      <div class="chapter_txt">#DONUTNEWCHAPTER</div>
+      <div class="chapter_txt">#DONATNEWCHAPTER</div>
     </div>
 
     <v-card
@@ -18,32 +18,62 @@
       style="background-color: #f6f6f6"
       flat
     >
+      <!-- <v-card :class="$vuetify.display.smAndDown ? 'pa-3' : 'pa-10'" flat> -->
       <v-row class="mt-4 mb-4">
-        <v-col cols="6" class="ml-2">
-          <v-card
-            :class="$vuetify.display.smAndDown ? 'pa-2' : 'pa-6'"
-            rounded="0"
+        <v-col cols="6" class="pa-4">
+          <!-- <v-card
+            :class="
+              $vuetify.display.smAndDown
+                ? 'pa-2 card_rounded'
+                : 'pa-6 card_rounded'
+            "
+            rounded
             height="100%"
             elevation="3"
+          > -->
+          <v-img
+            class="title_img img_hover_zoom1"
+            src="/src/assets/slidePic/35.jpeg"
+            :style="
+              $vuetify.display.smAndDown
+                ? 'display: flex; align-items: flex-end'
+                : ''
+            "
           >
-            <span class="name_profile_txt mt-10 mb-10"
-              >Nutthapon Kulkrittayarat</span
-            >
-            <v-img src="/src/assets/slidePic/35.jpeg" />
-          </v-card>
+            <div class="wrapper_txt_title_img">
+              <span class="name_profile_txt mt-10 mb-10"
+                >Nutthapon Kulkrittayarat</span
+              >
+            </div>
+          </v-img>
+          <!-- </v-card> -->
         </v-col>
-        <v-col cols="6" class="ml-n2">
-          <v-card
-            :class="$vuetify.display.smAndDown ? 'pa-2' : 'pa-6'"
-            rounded="0"
+        <v-col cols="6" class="pa-4">
+          <!-- <v-card
+            :class="
+              $vuetify.display.smAndDown
+                ? 'pa-2 card_rounded'
+                : 'pa-6 card_rounded'
+            "
             height="100%"
             elevation="3"
+          > -->
+          <v-img
+            class="title_img img_hover_zoom1"
+            src="/src/assets/slidePic/36.jpeg"
+            :style="
+              $vuetify.display.smAndDown
+                ? 'display: flex; align-items: flex-end'
+                : ''
+            "
           >
-            <span class="name_profile_txt mt-10 mb-10"
-              >Nutchita Saksupawattanakul</span
-            >
-            <v-img src="/src/assets/slidePic/36.jpeg" />
-          </v-card>
+            <div class="wrapper_txt_title_img">
+              <span class="name_profile_txt mt-10 mb-10 font-weight-bold"
+                >Nutchita Saksupawattanakul</span
+              >
+            </div>
+          </v-img>
+          <!-- </v-card> -->
         </v-col>
       </v-row>
     </v-card>
@@ -51,7 +81,7 @@
     <div class="wrapper_presence">
       <div class="request_txt">HERE'S A SNEAK PEEK OF</div>
       <br />
-      <div class="celeb_txt">OUR SPECIAL DAY'S <br />SHELDULE</div>
+      <div class="celeb_txt">OUR SPECIAL DAY'S <br />SCHEDULE</div>
 
       <div class="wrapper_grid mb-16 pa-10">
         <div class="img_icon">
@@ -70,7 +100,7 @@
           <div class="icon_txt">
             09.09 AM
             <br />
-            The Egagement
+            The Engagement
           </div>
         </div>
 
@@ -109,7 +139,7 @@
       ></v-img>
     </v-card>
 
-    <div class="pa-16">
+    <div class="pa-16 pb-7">
       <span
         :style="
           $vuetify.display.smAndDown
@@ -123,8 +153,8 @@
 
     <div class="mb-10">
       <swiper
-        :slides-per-view="$vuetify.display.smAndDown ? 4 : 5"
-        :spaceBetween="10"
+        :slides-per-view="$vuetify.display.smAndDown ? 3 : 5"
+        :spaceBetween="$vuetify.display.smAndDown ? 15 : 20"
         :centeredSlides="false"
         :autoplay="{
           delay: 0,
@@ -132,11 +162,12 @@
         }"
         :navigation="false"
         :modules="modules"
-        class="mySwiper"
+        class="mySwiper wrapper_slide"
         speed="2000"
       >
         <swiper-slide v-for="(image, index) in images" :key="index">
           <img
+            class="img_slide img_hover_zoom"
             :src="image.src"
             :style="
               $vuetify.display.smAndDown
@@ -150,51 +181,93 @@
       </swiper>
     </div>
 
-    <div>
-      <a
-        href="https://maps.app.goo.gl/JNRwjb3ctpqVXBKK8?g_st=il"
-        target="_blank"
+    <div class="mb-5">
+      <span
+        :style="
+          $vuetify.display.smAndDown
+            ? ' font-size: 22px; font-weight: 400'
+            : ' font-size: 38px; font-weight: 400'
+        "
+        style="font-family: 'Nanum Myeongjo', serif; font-weight: 500"
+        >Click here to get the map</span
       >
-        <v-img src="../assets/mapKhampheang6.jpeg" class="mx-auto"></v-img>
-      </a>
     </div>
 
-    <v-card width="auto" class="pa-6" flat color="#F5F5F5">
+    <v-row class="pa-5">
+      <v-col cols="12" md="12" lg="12" xl="12">
+        <v-card class="mx-auto mb-15 card_map" max-width="1000">
+          <a
+            href="https://maps.app.goo.gl/JNRwjb3ctpqVXBKK8?g_st=il"
+            target="_blank"
+          >
+            <v-img
+              height="auto"
+              src="../assets/mapKhampheang6.jpeg"
+              cover
+              class="mx-auto img_map"
+            ></v-img>
+          </a>
+
+          <v-card-title class="mt-8 txt_map">
+            Canegrowers Association of Region 6 Kamphaengphet
+          </v-card-title>
+
+          <v-card-title class="mb-8 txt_map">
+            สมาคมชาวไร่อ้อยเขต 6 กำแพงเพชร
+          </v-card-title>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <div style="background-color: #f6f6f6" class="pt-10">
+      <span
+        :style="
+          $vuetify.display.smAndDown
+            ? ' font-size: 22px; font-weight: 400'
+            : ' font-size: 38px; font-weight: 400'
+        "
+        style="font-family: 'Nanum Myeongjo', serif; font-weight: 500"
+        >Support for our wedding</span
+      >
+      <v-row class="pa-5 pb-0" style="background-color: #f6f6f6">
+        <v-col cols="12" md="12" lg="12" xl="12" class="pb-0">
+          <v-card
+            flat=""
+            class="mx-auto mb-15 card_map1"
+            max-width="1000"
+            style="background-color: #f6f6f6"
+          >
+            <v-img
+              :width="$vuetify.display.smAndDown ? '80%' : '30%'"
+              height="auto"
+              src="../assets/pp_qr.png"
+              cover
+              class="mx-auto img_map1"
+            ></v-img>
+          </v-card>
+        </v-col>
+      </v-row>
+    </div>
+
+    <!-- <v-card class="mx-auto mb-15 card_map" max-width="1000">
       <a
         href="https://maps.app.goo.gl/JNRwjb3ctpqVXBKK8?g_st=il"
         target="_blank"
-        style="text-decoration: none; color: #000"
       >
-        <div class="mt-3 mb-5">
-          <span
-            :style="
-              $vuetify.display.smAndDown
-                ? 'font-size: 14px'
-                : 'font-size: 24px; height: auto'
-            "
-            style="font-family: 'Nanum Myeongjo', serif"
-          >
-            Canegrowers Association of Region 6 Kamphaengphet <br />
-          </span>
-          <span
-            :style="
-              $vuetify.display.smAndDown
-                ? 'font-size: 14px'
-                : 'font-size: 24px; height: auto'
-            "
-            style="font-family: 'Kanit', sans-serif; font-weight: 200"
-          >
-            สมาคมชาวไร่อ้อยเขต 6 กำแพงเพชร
-          </span>
-        </div>
         <v-img
-          :width="$vuetify.display.smAndDown ? '30%' : '15%'"
           height="auto"
-          src="../assets/qrKham6.png"
-          class="mx-auto"
+          src="../assets/mapKhampheang6.jpeg"
+          cover
+          class="mx-auto img_map"
         ></v-img>
       </a>
-    </v-card>
+
+      <v-card-title class="mt-8">
+        Canegrowers Association of Region 6 Kamphaengphet
+      </v-card-title>
+
+      <v-card-title class="mb-8"> สมาคมชาวไร่อ้อยเขต 6 กำแพงเพชร </v-card-title>
+    </v-card> -->
   </v-responsive>
 </template>
 
@@ -205,6 +278,8 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
+import { useHead } from "@vueuse/head";
 
 export default {
   components: {
@@ -217,6 +292,18 @@ export default {
       (el, index) => `Slide ${index + 1}`
     );
 
+    useHead({
+      // Can be static or computed
+      title: "Donut & Nat",
+      meta: [
+        {
+          name: `Wedding`,
+          content: "this about wedding page",
+          image: "@/assets/slidePic/1.jpeg",
+        },
+      ],
+    });
+
     return {
       slides,
       Virtual,
@@ -225,6 +312,8 @@ export default {
   },
   data() {
     return {
+      show: false,
+
       countdown: "",
       dayCount: "",
       hrCount: "",
@@ -479,7 +568,7 @@ export default {
   font-family: Nanum Myeongjo;
 
   @media only screen and (max-width: 1280px) {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 }
 
@@ -522,13 +611,12 @@ export default {
 
 .name_profile_txt {
   font-size: 2.7vw;
-  font-weight: 580;
   font-family: Nanum Myeongjo;
+  color: #f6f6f6;
 
-  /* @media only screen and (max-width: 1280px) {
-    font-size: 12px;
-    margin-top: auto;
-  } */
+  text-shadow: 1px 0 #888888;
+  letter-spacing: 1px;
+  font-weight: 900;
 }
 
 .column_card {
@@ -566,5 +654,93 @@ export default {
   border-top-left-radius: 8px !important;
   border-top-right-radius: 8px !important;
   margin-bottom: 30px;
+}
+
+/* card title img */
+.card_rounded {
+  border-radius: 12px !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.title_img {
+  margin-top: 12px;
+  border-radius: 12px !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+img {
+  border-radius: 12px !important;
+}
+
+.card_map {
+  border-radius: 12px !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card_map1 {
+  border-radius: 12px !important;
+}
+
+.img_map {
+  width: 100%;
+  height: auto;
+}
+
+.img_map1 {
+  border-radius: 12px !important;
+  margin-bottom: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.wrapper_slide {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.img_slide {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.wrapper_txt_title_img {
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* color: #000;
+  color: rgba(255, 255, 255, 0.667); */
+  /* color: #f6f6f6 */
+}
+
+.img_hover_zoom {
+  transition: transform 0.6s ease;
+}
+
+.img_hover_zoom:hover {
+  transform: scale(1.07);
+}
+
+.img_hover_zoom1 {
+  transition: transform 0.8s ease;
+}
+
+.img_hover_zoom1:hover {
+  transform: scale(1.04);
+}
+
+.txt_map {
+  font-weight: bold;
+  font-size: 20px !important;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+@media only screen and (max-width: 1024px) {
+  .card_map {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    border-radius: 12px !important;
+  }
+  .txt_map {
+    font-size: 11.5px !important;
+  }
 }
 </style>

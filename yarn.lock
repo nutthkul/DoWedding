@@ -204,6 +204,47 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@unhead/dom@1.9.3", "@unhead/dom@^1.7.0":
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/@unhead/dom/-/dom-1.9.3.tgz#9d4d5bca80be3289df428c9c731a193aa2be24f3"
+  integrity sha512-l7KO6zv8T/yKpWOtcKww3k6RLENEiwiapoiPwtKlwWBFJekSjgM1+1AVu58yWqadFYHGP0/XhMwxKrOaOL+Vkw==
+  dependencies:
+    "@unhead/schema" "1.9.3"
+    "@unhead/shared" "1.9.3"
+
+"@unhead/schema@1.9.3", "@unhead/schema@^1.7.0":
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/@unhead/schema/-/schema-1.9.3.tgz#b462e742b22ddbda6697f857241a0f7d87fb636b"
+  integrity sha512-emFHDYxn6u5SVwSRXMpYBCYKBua+GCjUwTLLdUupInthW3UraSUuXakmv06wDvejE8pTrBOPrGWescIYmwm69A==
+  dependencies:
+    hookable "^5.5.3"
+    zhead "^2.2.4"
+
+"@unhead/shared@1.9.3":
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/@unhead/shared/-/shared-1.9.3.tgz#e871f9cea17228771fd895026a43750af8527e04"
+  integrity sha512-9wJ+wNmAVDCsCFKE3YHMwNkmFqKzCqQfp53ABJHQFOvY336s4nMWtiMNMjxF4aY4pJk8Qpwd8dRlgpLlyH0KZg==
+  dependencies:
+    "@unhead/schema" "1.9.3"
+
+"@unhead/ssr@^1.7.0":
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/@unhead/ssr/-/ssr-1.9.3.tgz#7afbc1eecf55ef4351749bd6736102a2a57e5070"
+  integrity sha512-oFFynkmAoHoDU2uG3otBnYOj5rmi14fqaUpA4tzsRlyLiwyF3Hd8nXec9YM7JaBzstoiy2NGf7dTfY7eNc8NoQ==
+  dependencies:
+    "@unhead/schema" "1.9.3"
+    "@unhead/shared" "1.9.3"
+
+"@unhead/vue@^1.7.0":
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/@unhead/vue/-/vue-1.9.3.tgz#809a8616f0bbae3941dbd441c52f288d654e75d1"
+  integrity sha512-DrTOTUOvKZlL7nVhsu9gCNXiGv/ErqHqSOrbNGqahlnOFJgJQD+9VVr904K/u75ISg00ksAzKfFPN15FgMovMw==
+  dependencies:
+    "@unhead/schema" "1.9.3"
+    "@unhead/shared" "1.9.3"
+    hookable "^5.5.3"
+    unhead "1.9.3"
+
 "@vitejs/plugin-vue@^4.0.0":
   version "4.3.4"
   resolved "https://registry.npmjs.org/@vitejs/plugin-vue/-/plugin-vue-4.3.4.tgz"
@@ -311,6 +352,16 @@
   dependencies:
     find-cache-dir "^3.3.2"
     upath "^2.0.1"
+
+"@vueuse/head@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/head/-/head-2.0.0.tgz#a4570c0933368a436796c2f737d56e169a8f0864"
+  integrity sha512-ykdOxTGs95xjD4WXE4na/umxZea2Itl0GWBILas+O4oqS7eXIods38INvk3XkJKjqMdWPcpCyLX/DioLQxU1KA==
+  dependencies:
+    "@unhead/dom" "^1.7.0"
+    "@unhead/schema" "^1.7.0"
+    "@unhead/ssr" "^1.7.0"
+    "@unhead/vue" "^1.7.0"
 
 acorn-jsx@^5.3.2:
   version "5.3.2"
@@ -932,6 +983,11 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
+hookable@^5.5.3:
+  version "5.5.3"
+  resolved "https://registry.yarnpkg.com/hookable/-/hookable-5.5.3.tgz#6cfc358984a1ef991e2518cb9ed4a778bbd3215d"
+  integrity sha512-Yc+BQe8SvoXH1643Qez1zqLRmbA5rCL+sSmk6TVos0LWVfNIB7PGncdlId77WzLGSIB5KaWgTaNTs2lNVEI6VQ==
+
 https-proxy-agent@^7.0.1:
   version "7.0.2"
   resolved "https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-7.0.2.tgz"
@@ -1475,6 +1531,16 @@ type-fest@^0.20.2:
   resolved "https://registry.npmjs.org/type-fest/-/type-fest-0.20.2.tgz"
   integrity sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ==
 
+unhead@1.9.3:
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/unhead/-/unhead-1.9.3.tgz#9c9d7a69aecd0f6c1becbf98114d9ba18fdf720a"
+  integrity sha512-nV6d4ALJph73hCJT1tAd4z30Q2Gv8vNUvK0netM/EetL2scdggf9brcX3OyPqWhZbnFIOE+AouH2oE1KPznkcw==
+  dependencies:
+    "@unhead/dom" "1.9.3"
+    "@unhead/schema" "1.9.3"
+    "@unhead/shared" "1.9.3"
+    hookable "^5.5.3"
+
 unplugin-fonts@^1.0.3:
   version "1.0.3"
   resolved "https://registry.npmjs.org/unplugin-fonts/-/unplugin-fonts-1.0.3.tgz"
@@ -1625,3 +1691,8 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.npmjs.org/yocto-queue/-/yocto-queue-0.1.0.tgz"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
+
+zhead@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/zhead/-/zhead-2.2.4.tgz#87cd1e2c3d2f465fa9f43b8db23f9716dfe6bed7"
+  integrity sha512-8F0OI5dpWIA5IGG5NHUg9staDwz/ZPxZtvGVf01j7vHqSyZ0raHY+78atOVxRqb73AotX22uV1pXt3gYSstGag==
