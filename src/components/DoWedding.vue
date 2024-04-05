@@ -1,82 +1,124 @@
 <template>
-  <v-responsive class="align-center text-center fill-height">
+  <v-responsive class="align-center text-center fill-height bgColor">
     <div>
       <v-img src="../assets/Banner.jpeg" class="mx-auto"></v-img>
     </div>
     <div class="wrapper_presence">
-      <div class="request_txt mt-15">Request the honer of your presence</div>
+      <div class="request_txt mt-15">With joyful hearts we invite you</div>
       <br />
-      <div class="celeb_txt">TO CELEBRATE OUR MARRIAGE</div>
+      <div class="celeb_txt">TO CELEBRATE OUR WEDDING</div>
       <br />
-      <div class="request_txt mt-n5">02 JUNE 2024</div>
+      <div class="request_txt mt-5">02 JUNE 2024</div>
       <br />
-      <div class="chapter_txt">#DONATNEWCHAPTER</div>
+      <div class="chapter_txt">#DoNatNewChapter</div>
     </div>
 
-    <v-card
+    <div class="wrapper_profile">
+      <img src="../assets/slidePic/33.jpeg" />
+
+      <div class="nickname1_txtImg">
+        <div
+          style="
+            font-size: 9vw;
+            font-weight: 500;
+            color: transparent;
+            text-shadow: 0 0 2px #f6f6f6;
+          "
+        >
+          Doughnut
+        </div>
+      </div>
+
+      <div class="nickname2_txtImg">
+        <div
+          style="
+            font-size: 9vw;
+            font-weight: 500;
+            color: transparent;
+            text-shadow: 0 0 2px #f6f6f6;
+          "
+        >
+          Nat
+        </div>
+      </div>
+
+      <div class="doughnut_txtImg">
+        <div style="font-size: 4vw">Nutthapon</div>
+
+        <div style="font-size: 4vw">Kulkrittayarat</div>
+      </div>
+      <div class="nat_txtImg">
+        <div style="font-size: 4vw">Nutchita</div>
+
+        <div style="font-size: 4vw">Saksupawattanakul</div>
+      </div>
+    </div>
+
+    <!-- <v-card
       :class="$vuetify.display.smAndDown ? 'pa-3' : 'pa-10'"
       style="background-color: #f6f6f6"
       flat
     >
-      <!-- <v-card :class="$vuetify.display.smAndDown ? 'pa-3' : 'pa-10'" flat> -->
-      <v-row class="mt-4 mb-4">
-        <v-col cols="6" class="pa-4">
-          <!-- <v-card
-            :class="
-              $vuetify.display.smAndDown
-                ? 'pa-2 card_rounded'
-                : 'pa-6 card_rounded'
-            "
-            rounded
-            height="100%"
-            elevation="3"
-          > -->
-          <v-img
-            class="title_img img_hover_zoom1"
-            src="/src/assets/slidePic/35.jpeg"
-            :style="
-              $vuetify.display.smAndDown
-                ? 'display: flex; align-items: flex-end'
-                : ''
-            "
-          >
-            <div class="wrapper_txt_title_img">
-              <span class="name_profile_txt mt-10 mb-10"
-                >Nutthapon Kulkrittayarat</span
+      <v-card :class="$vuetify.display.smAndDown ? 'pa-3' : 'pa-10'" flat>
+        <v-row class="mt-4 mb-4">
+          <v-col cols="6" class="pa-4">
+            <v-card
+              :class="
+                $vuetify.display.smAndDown
+                  ? 'pa-2 card_rounded'
+                  : 'pa-6 card_rounded'
+              "
+              rounded
+              height="100%"
+              elevation="3"
+            >
+              <v-img
+                class="title_img img_hover_zoom1"
+                src="/src/assets/slidePic/35.jpeg"
+                :style="
+                  $vuetify.display.smAndDown
+                    ? 'display: flex; align-items: flex-end'
+                    : ''
+                "
               >
-            </div>
-          </v-img>
-          <!-- </v-card> -->
-        </v-col>
-        <v-col cols="6" class="pa-4">
-          <!-- <v-card
-            :class="
-              $vuetify.display.smAndDown
-                ? 'pa-2 card_rounded'
-                : 'pa-6 card_rounded'
-            "
-            height="100%"
-            elevation="3"
-          > -->
-          <v-img
-            class="title_img img_hover_zoom1"
-            src="/src/assets/slidePic/36.jpeg"
-            :style="
-              $vuetify.display.smAndDown
-                ? 'display: flex; align-items: flex-end'
-                : ''
-            "
-          >
-            <div class="wrapper_txt_title_img">
-              <span class="name_profile_txt mt-10 mb-10 font-weight-bold"
-                >Nutchita Saksupawattanakul</span
+                <div class="wrapper_txt_title_img">
+                  <span class="name_profile_txt mt-10 mb-10"
+                    >Nutthapon Kulkrittayarat</span
+                  >
+                </div>
+              </v-img>
+            </v-card>
+          </v-col>
+          <v-col cols="6" class="pa-4">
+            <v-card
+              :class="
+                $vuetify.display.smAndDown
+                  ? 'pa-2 card_rounded'
+                  : 'pa-6 card_rounded'
+              "
+              height="100%"
+              elevation="3"
+            >
+              <v-img
+                class="title_img img_hover_zoom1"
+                src="/src/assets/slidePic/36.jpeg"
+                :style="
+                  $vuetify.display.smAndDown
+                    ? 'display: flex; align-items: flex-end'
+                    : ''
+                "
               >
-            </div>
-          </v-img>
-          <!-- </v-card> -->
-        </v-col>
-      </v-row>
-    </v-card>
+                <div class="wrapper_txt_title_img">
+                  <span class="name_profile_txt mt-10 mb-10 font-weight-bold"
+                    >Nutchita Saksupawattanakul</span
+                  >
+                </div>
+              </v-img>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-card>
+    </v-card> -->
 
     <div class="wrapper_presence">
       <div class="request_txt">HERE'S A SNEAK PEEK OF</div>
@@ -126,7 +168,84 @@
       </div>
     </div>
 
-    <v-card
+    <div>
+      <div class="img_dress">
+        <img class="img_bg" src="../assets/slidePic/22.jpeg" />
+        <div class="wrapper_theme">
+          <div class="wedding_theme_txt">WEDDING THEME</div>
+          <div class="dress_code_txt mb-16">#DRESS CODE</div>
+          <div class="grid_theme1" v-if="!$vuetify.display.smAndDown">
+            <div>
+              <img class="img_theme" src="../assets/THEME3.png" />
+              <br />
+              <div class="font_color">#A35105</div>
+            </div>
+
+            <div>
+              <img class="img_theme" src="../assets/THEME1.png" />
+              <br />
+              <div class="font_color">#EDC796</div>
+            </div>
+
+            <div>
+              <img class="img_theme" src="../assets/THEME2.png" />
+              <br />
+              <div class="font_color">#B9CFBA</div>
+            </div>
+          </div>
+
+          <div class="grid_theme2" v-if="!$vuetify.display.smAndDown">
+            <div>
+              <img class="img_theme" src="../assets/THEME4.png" />
+              <br />
+              <div class="font_color">#EBBCC4</div>
+            </div>
+
+            <div>
+              <img class="img_theme" src="../assets/THEME5.png" />
+              <br />
+              <div class="font_color">#B52F35</div>
+            </div>
+          </div>
+
+          <!-- mobile resposive Dress theme -->
+
+          <div class="grid_mobile" v-if="$vuetify.display.smAndDown">
+            <div>
+              <img class="img_theme" src="../assets/THEME3.png" />
+              <br />
+              <div class="font_color">#A35105</div>
+            </div>
+
+            <div>
+              <img class="img_theme" src="../assets/THEME1.png" />
+              <br />
+              <div class="font_color">#EDC796</div>
+            </div>
+
+            <div>
+              <img class="img_theme" src="../assets/THEME2.png" />
+              <br />
+              <div class="font_color">#B9CFBA</div>
+            </div>
+
+            <div>
+              <img class="img_theme" src="../assets/THEME4.png" />
+              <br />
+              <div class="font_color">#EBBCC4</div>
+            </div>
+
+            <div>
+              <img class="img_theme" src="../assets/THEME5.png" />
+              <br />
+              <div class="font_color">#B52F35</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <v-card
       :class="$vuetify.display.smAndDown ? 'pa-3' : 'pa-10'"
       style="background-color: #f6f6f6"
       flat
@@ -137,16 +256,27 @@
         src="../assets/dress_code_item.png"
         class="mx-auto mt-6 mb-6"
       ></v-img>
-    </v-card>
+    </v-card> -->
 
-    <div class="pa-16 pb-7">
+    <div class="pa-16 pb-7 mb-10">
+      <span
+        :style="
+          $vuetify.display.smAndDown
+            ? ' font-size: 10px; font-weight: 400'
+            : ' font-size: 20px; font-weight: 400'
+        "
+        style="font-family: 'Nanum Myeongjo', serif; font-weight: 400"
+      >
+        MEMORIES
+      </span>
+      <br />
       <span
         :style="
           $vuetify.display.smAndDown
             ? ' font-size: 18px; font-weight: 400'
             : ' font-size: 38px; font-weight: 400'
         "
-        style="font-family: 'Nanum Myeongjo', serif; font-weight: 500"
+        style="font-family: 'Nanum Myeongjo', serif; font-weight: 800"
         >OUR WEDDING GALLERY</span
       >
     </div>
@@ -181,21 +311,57 @@
       </swiper>
     </div>
 
-    <div class="mb-5">
-      <span
-        :style="
-          $vuetify.display.smAndDown
-            ? ' font-size: 22px; font-weight: 400'
-            : ' font-size: 38px; font-weight: 400'
-        "
-        style="font-family: 'Nanum Myeongjo', serif; font-weight: 500"
-        >Click here to get the map</span
+    <div class="mt-16">
+      <div style="font-size: 2.3vw; font-family: Sree Krushnadevaraya">
+        WE CAN’T WAIT TO SEE YOU!
+      </div>
+      <div
+        class="mb-16"
+        style="font-size: 6vw; font-family: Sree Krushnadevaraya"
       >
+        THE VENUE
+      </div>
+      <div class="img_venue">
+        <img src="../assets/Vanueu.png" />
+      </div>
+      <div
+        class="mb-10 mt-6"
+        style="
+          font-size: 2.5vw;
+          font-family: Sree Krushnadevaraya;
+          font-weight: 400;
+        "
+      >
+        Canegrowers Association of Region 6, Kamphaengphet
+        <br />สมาคมชาวไร่อ้อยเขต 6 กำแพงเพชร
+      </div>
+
+      <div class="btn_google mb-10">
+        <button>
+          <a
+            href="https://maps.app.goo.gl/JNRwjb3ctpqVXBKK8?g_st=il"
+            role="button"
+            style="text-decoration-line: none"
+            >Open Google Map</a
+          >
+        </button>
+      </div>
     </div>
 
-    <v-row class="pa-5">
+    <!-- <v-row class="pa-5">
       <v-col cols="12" md="12" lg="12" xl="12">
         <v-card class="mx-auto mb-15 card_map" max-width="1000">
+          <div class="mb-5 mt-5">
+            <span
+              :style="
+                $vuetify.display.smAndDown
+                  ? ' font-size: 22px; font-weight: 400'
+                  : ' font-size: 38px; font-weight: 400'
+              "
+              style="font-family: 'Nanum Myeongjo', serif; font-weight: 550"
+              >Click here to get the map</span
+            >
+          </div>
           <a
             href="https://maps.app.goo.gl/JNRwjb3ctpqVXBKK8?g_st=il"
             target="_blank"
@@ -217,9 +383,46 @@
           </v-card-title>
         </v-card>
       </v-col>
-    </v-row>
+    </v-row> -->
 
-    <div style="background-color: #f6f6f6" class="pt-10">
+    <div>
+      <div class="img_support">
+        <img src="../assets/27crop.jpeg" />
+        <div class="support_txtImg">
+          <div style="font-size: 4vw; font-family: Sree Krushnadevaraya">
+            To our family and friends
+          </div>
+          <div
+            class="mt-10"
+            style="font-size: 2.5vw; font-family: Sree Krushnadevaraya"
+          >
+            Thank you for your love, support, and for being a part of our
+            special day. We love you all dearly.
+            <br />
+            <div class="mt-16">
+              With love,
+              <br />
+              Doughnut & Nat
+            </div>
+            <br />
+            <div>
+              <div style="font-size: 2vw; font-family: Sree Krushnadevaraya">
+                Join in congratulating
+              </div>
+              <v-img
+                :width="$vuetify.display.smAndDown ? '30%' : '20%'"
+                height="auto"
+                src="../assets/pp_qr.png"
+                cover
+                class="mx-auto img_map1"
+              ></v-img>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div style="background-color: #f6f6f6" class="pt-10">
       <span
         :style="
           $vuetify.display.smAndDown
@@ -244,10 +447,31 @@
               cover
               class="mx-auto img_map1"
             ></v-img>
+
+            <span
+              :style="
+                $vuetify.display.smAndDown
+                  ? ' font-size: 18px; font-weight: 400'
+                  : ' font-size: 22px; font-weight: 400'
+              "
+              style="font-family: 'Nanum Myeongjo', serif; font-weight: 500"
+              >PROMTPAY : xxx-x-x8897-x
+              <br />
+              <span
+                :style="
+                  $vuetify.display.smAndDown
+                    ? ' font-size: 18px; font-weight: 400'
+                    : ' font-size: 22px; font-weight: 400'
+                "
+                style="font-family: 'Nanum Myeongjo', serif; font-weight: 500"
+              >
+                น.ส. ณัฐชิตา ศักดิ์สุภาวัฒนกุล
+              </span>
+            </span>
           </v-card>
         </v-col>
       </v-row>
-    </div>
+    </div> -->
 
     <!-- <v-card class="mx-auto mb-15 card_map" max-width="1000">
       <a
@@ -507,6 +731,10 @@ export default {
 </script>
 
 <style scoped>
+.bgColor {
+  background-color: #fbf7ee;
+}
+
 .imgOnTitle {
   text-align: center;
   color: #0f0f0f;
@@ -550,6 +778,7 @@ export default {
   margin-left: 20px;
   margin-right: 20px;
   justify-content: center;
+
   @media only screen and (max-width: 1280px) {
     display: block;
   }
@@ -563,7 +792,7 @@ export default {
 }
 
 .request_txt {
-  font-size: 3vw;
+  font-size: 1.7vw;
   font-weight: 600;
   font-family: Nanum Myeongjo;
 
@@ -572,9 +801,92 @@ export default {
   }
 }
 
+/* Dress Theme */
+
+.img_dress {
+  width: 100%;
+  position: relative;
+}
+
+.img_bg {
+  height: 1250px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+
+  @media only screen and (max-width: 1280px) {
+    height: 300px;
+
+    object-fit: cover;
+    object-position: center bottom;
+  }
+}
+
+.wrapper_theme {
+  position: absolute;
+  top: 10% !important;
+  left: 12%;
+  justify-content: center;
+
+  @media only screen and (max-width: 1280px) {
+    top: 10% !important;
+    left: 8%;
+  }
+}
+
+.grid_theme1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 300px !important;
+  margin-top: 30px;
+
+  justify-content: center;
+
+  @media only screen and (max-width: 1280px) {
+    display: grid;
+    column-gap: 15px !important;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    justify-content: center;
+  }
+}
+
+.grid_theme2 {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 20px;
+}
+
+.grid_mobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 10px !important;
+  margin-top: 30px;
+
+  justify-content: center;
+}
+
+.font_color {
+  font-family: Nanum Myeongjo;
+  font-size: 3.3vw;
+  font-weight: 600;
+}
+
+.img_theme {
+  padding: auto;
+  height: 210px;
+  margin-top: 20px;
+  margin-right: 10px;
+
+  @media only screen and (max-width: 1280px) {
+    height: 55px;
+  }
+}
 .wedding_theme_txt {
   font-size: 1.7vw;
-  font-weight: 400;
+  font-weight: 900;
   font-family: Nanum Myeongjo;
   @media only screen and (max-width: 1280px) {
     font-size: 3vw;
@@ -591,7 +903,7 @@ export default {
 }
 
 .celeb_txt {
-  font-size: 5vw;
+  font-size: 4vw;
   font-weight: 700;
   /* @media only screen and (max-width: 1280px) {
     font-size: 20px;
@@ -599,7 +911,7 @@ export default {
 }
 
 .chapter_txt {
-  font-size: 1.5vw;
+  font-size: 1vw;
   font-weight: 600;
   margin-top: 5%;
 
@@ -609,51 +921,80 @@ export default {
   }
 }
 
-.name_profile_txt {
-  font-size: 2.7vw;
-  font-family: Nanum Myeongjo;
-  color: #f6f6f6;
+/* profile */
 
-  text-shadow: 1px 0 #888888;
-  letter-spacing: 1px;
-  font-weight: 900;
+.doughnut_txtImg {
+  font-family: Playfair Display;
+
+  color: white;
+  text-align: right;
+
+  top: 36%;
+  left: 85%;
+
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
-.column_card {
-  display: grid;
-  width: 100%;
-  height: auto;
-  align-content: space-evenly;
-  padding: 30px;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px !important;
+.nickname1_txtImg {
+  font-family: Playfair Display;
 
-  padding-top: 0px !important;
+  color: white;
+  text-align: left;
+
+  top: 25%;
+  left: 77%;
+
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.nickname2_txtImg {
+  font-family: Playfair Display;
+
+  color: white;
+  text-align: left;
+
+  bottom: 10%;
+  left: 10%;
+
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.nat_txtImg {
+  font-family: Playfair Display;
+
+  color: white;
+  text-align: left;
+
+  bottom: 1%;
+  left: 25%;
+
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper_profile {
+  width: 100%;
+  position: relative;
 
   @media screen and (max-width: 1280px) {
-    gap: 10px !important;
-    grid-template-columns: 1fr 1fr;
+    padding: 10px 10px;
   }
 }
 
-.wrapper_card {
+.wrapper_profile img {
+  height: 1650px;
   width: 100%;
-  margin-bottom: 50px;
-  border-radius: 8px;
-  padding: auto;
+  object-fit: cover;
+  object-position: center top;
 
-  border: 1px solid #f0f0f0;
-  height: auto !important;
-
-  box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16),
-    0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
-}
-
-.img_profile {
-  height: auto;
-  border-top-left-radius: 8px !important;
-  border-top-right-radius: 8px !important;
-  margin-bottom: 30px;
+  @media screen and (max-width: 1280px) {
+    height: 380px;
+    object-fit: cover;
+    object-position: center top;
+  }
 }
 
 /* card title img */
@@ -687,7 +1028,7 @@ img {
 }
 
 .img_map1 {
-  border-radius: 12px !important;
+  border-radius: 4px !important;
   margin-bottom: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -741,6 +1082,64 @@ img {
   }
   .txt_map {
     font-size: 11.5px !important;
+  }
+}
+
+.img_venue img {
+  width: auto;
+  object-fit: scale-down;
+
+  @media only screen and (max-width: 1024px) {
+    height: auto;
+    padding: 35px 30px;
+
+    width: 100%;
+  }
+}
+.btn_google button {
+  font-family: Sree Krushnadevaraya;
+
+  width: 200px;
+  height: 70px;
+  color: #b9ab8e;
+  border: 3px solid #b9ab8e;
+  border-radius: 20px;
+
+  @media only screen and (max-width: 1024px) {
+    height: 45px;
+  }
+}
+
+/* support */
+
+.support_txtImg {
+  color: white;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  margin-left: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 0.8 !important;
+
+  @media screen and (max-width: 1280px) {
+    top: 50%;
+  }
+}
+
+.img_support {
+  margin-top: 100px;
+  width: 100%;
+  position: relative;
+}
+
+.img_support img {
+  height: auto;
+  width: 100%;
+  filter: invert(20%) saturate(140%) hue-rotate(0deg) brightness(100%);
+
+  @media screen and (max-width: 1280px) {
+    height: auto;
   }
 }
 </style>
