@@ -170,7 +170,7 @@
 
     <div>
       <div class="img_dress">
-        <img class="img_bg" src="../assets/slidePic/22.jpeg" />
+        <img class="img_bgDress" src="../assets/slidePic/22.jpeg" />
         <div class="wrapper_theme">
           <div class="wedding_theme_txt">WEDDING THEME</div>
           <div class="dress_code_txt mb-16">#DRESS CODE</div>
@@ -808,13 +808,60 @@ export default {
   position: relative;
 }
 
-.img_bg {
+.wrapper_theme {
+  position: absolute;
+  top: 10% !important;
+  left: 12%;
+  justify-content: center;
+
+  @media only screen and (max-width: 1240px) {
+    top: 10% !important;
+    left: 28% !important;
+  }
+
+  @media only screen and (max-width: 900px) {
+    top: 10% !important;
+    left: 25% !important;
+  }
+
+  @media only screen and (max-width: 500px) {
+    top: 10% !important;
+    left: 10% !important;
+  }
+
+  @media only screen and (max-width: 400px) {
+    top: 10% !important;
+    left: 6% !important;
+  }
+}
+
+.img_bgDress {
   height: 1250px;
   width: 100%;
   object-fit: cover;
   object-position: center bottom;
 
   @media only screen and (max-width: 1280px) {
+    height: 600px;
+
+    object-fit: cover;
+    object-position: center bottom;
+  }
+  @media only screen and (max-width: 900px) {
+    height: 400px;
+
+    object-fit: cover;
+    object-position: center bottom;
+  }
+
+  @media only screen and (max-width: 500px) {
+    height: 300px;
+
+    object-fit: cover;
+    object-position: center bottom;
+  }
+
+  @media only screen and (max-width: 400px) {
     height: 300px;
 
     object-fit: cover;
@@ -822,34 +869,35 @@ export default {
   }
 }
 
-.wrapper_theme {
-  position: absolute;
-  top: 10% !important;
-  left: 12%;
-  justify-content: center;
+.img_theme {
+  padding: auto;
+  height: 210px;
+  margin-top: 20px;
+  margin-right: 10px;
 
   @media only screen and (max-width: 1280px) {
-    top: 10% !important;
-    left: 8%;
+    height: 80px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    height: 50px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    height: 50px;
   }
 }
 
 .grid_theme1 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr !important;
   column-gap: 300px !important;
   margin-top: 30px;
 
   justify-content: center;
 
   @media only screen and (max-width: 1280px) {
-    display: grid;
-    column-gap: 15px !important;
-    margin-top: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-
-    justify-content: center;
+    column-gap: 30px !important;
   }
 }
 
@@ -861,7 +909,7 @@ export default {
 
 .grid_mobile {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr !important;
   column-gap: 10px !important;
   margin-top: 30px;
 
@@ -872,18 +920,12 @@ export default {
   font-family: Nanum Myeongjo;
   font-size: 3.3vw;
   font-weight: 600;
-}
-
-.img_theme {
-  padding: auto;
-  height: 210px;
-  margin-top: 20px;
-  margin-right: 10px;
 
   @media only screen and (max-width: 1280px) {
-    height: 55px;
+    font-size: 2vw;
   }
 }
+
 .wedding_theme_txt {
   font-size: 1.7vw;
   font-weight: 900;
@@ -991,7 +1033,19 @@ export default {
   object-position: center top;
 
   @media screen and (max-width: 1280px) {
-    height: 380px;
+    height: 1100px;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  @media screen and (max-width: 900px) {
+    height: 700px;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  @media screen and (max-width: 500px) {
+    height: 350px;
     object-fit: cover;
     object-position: center top;
   }
