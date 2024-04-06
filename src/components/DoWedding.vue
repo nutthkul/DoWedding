@@ -823,7 +823,7 @@ export default {
   text-align: center;
   margin-top: 10%;
   margin-bottom: 10%;
-  padding: 60px 0px 0px 0px;
+  padding: 144px 0px 0px 0px;
   @media only screen and (max-width: 1280px) {
     padding: 40px 0px 0px 0px;
     margin-top: auto;
@@ -850,7 +850,7 @@ export default {
 
 .wrapper_theme {
   position: absolute;
-  top: 10% !important;
+  top: 8% !important;
   left: 14%;
   justify-content: center;
 
@@ -914,7 +914,7 @@ export default {
 .img_theme {
   padding: auto;
   height: 240px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-right: 10px;
 
   @media only screen and (max-width: 1280px) {
