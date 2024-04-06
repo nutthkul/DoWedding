@@ -312,7 +312,13 @@
     </div>
 
     <div class="mt-16">
-      <div style="font-size: 2.3vw; font-family: Sree Krushnadevaraya">
+      <div
+        style="
+          font-size: 2.3vw;
+          font-family: Sree Krushnadevaraya;
+          margin-top: 15%;
+        "
+      >
         WE CAN’T WAIT TO SEE YOU!
       </div>
       <div
