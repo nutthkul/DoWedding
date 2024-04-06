@@ -250,7 +250,7 @@
       ></v-img>
     </v-card> -->
 
-    <div class="pa-16 pb-7 mb-1">
+    <div class="pa-10 pb-7 mb-1">
       <span
         :style="
           $vuetify.display.smAndDown
@@ -386,63 +386,6 @@
       </v-col>
     </v-row> -->
 
-    <div>
-      <div class="img_support">
-        <img src="../assets/27crop.jpeg" />
-        <div class="support_txtImg">
-          <div
-            :style="
-              $vuetify.display.smAndDown
-                ? ' font-size: 16px; font-weight: 400'
-                : ' font-size: 40px; font-weight: 400'
-            "
-            style="font-family: Sree Krushnadevaraya"
-          >
-            To our family and friends
-          </div>
-          <div
-            :style="
-              $vuetify.display.smAndDown
-                ? ' font-size: 12px; font-weight: 400'
-                : ' font-size: 32px; font-weight: 400'
-            "
-            class="mt-10"
-            style="font-family: Sree Krushnadevaraya"
-          >
-            Thank you for your love, support, and for being a part of our
-            special day. We love you all dearly.
-            <br />
-            <div class="mt-12">
-              With love,
-              <br />
-              Doughnut & Nat
-            </div>
-            <br />
-            <div class="margin_qr">
-              <div
-                class="mb-2"
-                :style="
-                  $vuetify.display.smAndDown
-                    ? ' font-size: 10px; font-weight: 400'
-                    : ' font-size: 25px; font-weight: 400'
-                "
-                style="font-family: Sree Krushnadevaraya"
-              >
-                Join in congratulating
-              </div>
-              <v-img
-                :width="$vuetify.display.smAndDown ? '30%' : '30%'"
-                height="auto"
-                src="../assets/pp_qr.png"
-                cover
-                class="mx-auto img_map1"
-              ></v-img>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- <div style="background-color: #f6f6f6" class="pt-10">
       <span
         :style="
@@ -513,6 +456,60 @@
 
       <v-card-title class="mb-8"> สมาคมชาวไร่อ้อยเขต 6 กำแพงเพชร </v-card-title>
     </v-card> -->
+
+    <div class="img_support">
+      <img src="../assets/27crop.jpeg" />
+      <div class="support_txtImg">
+        <div
+          :style="
+            $vuetify.display.smAndDown
+              ? ' font-size: 16px; font-weight: 400'
+              : ' font-size: 40px; font-weight: 400'
+          "
+          style="font-family: Sree Krushnadevaraya"
+        >
+          To our family and friends
+        </div>
+        <div
+          :style="
+            $vuetify.display.smAndDown
+              ? ' font-size: 12px; font-weight: 400'
+              : ' font-size: 32px; font-weight: 400'
+          "
+          class="mt-10"
+          style="font-family: Sree Krushnadevaraya"
+        >
+          Thank you for your love, support, and for being a part of our special
+          day. We love you all dearly.
+          <br />
+          <div class="mt-12">
+            With love,
+            <br />
+            Doughnut & Nat
+          </div>
+          <br />
+          <div class="margin_qr">
+            <div
+              :style="
+                $vuetify.display.smAndDown
+                  ? ' font-size: 10px; font-weight: 400'
+                  : ' font-size: 25px; font-weight: 400'
+              "
+              style="font-family: Sree Krushnadevaraya"
+            >
+              Join in congratulating
+            </div>
+            <v-img
+              :width="$vuetify.display.smAndDown ? '25%' : '30%'"
+              height="auto"
+              src="../assets/pp_qr.png"
+              cover
+              class="mx-auto img_map1"
+            ></v-img>
+          </div>
+        </div>
+      </div>
+    </div>
   </v-responsive>
 </template>
 
@@ -1228,14 +1225,14 @@ export default {
   text-align: center;
   top: 50%;
   left: 50%;
-  margin-left: 10px;
+
   position: absolute;
   transform: translate(-50%, -50%);
   opacity: 0.9 !important;
   text-shadow: 0px 0px 8px #0f0f0f;
 
   @media screen and (max-width: 1280px) {
-    top: 50%;
+    top: 52%;
   }
 }
 
@@ -1243,10 +1240,12 @@ export default {
   margin-top: 30px;
   width: 100%;
   position: relative;
+  margin-bottom: -10px;
 }
 
 .img_support img {
   height: auto;
+
   width: 100%;
   filter: invert(20%) saturate(140%) hue-rotate(0deg) brightness(100%);
 
