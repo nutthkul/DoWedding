@@ -8,7 +8,7 @@
       <br />
       <div class="celeb_txt">TO CELEBRATE OUR WEDDING</div>
       <br />
-      <div style="font-size: 2vw; font-weight: ">02 JUNE 2024</div>
+      <div style="font-size: 2vw; font-weight: 600">02 JUNE 2024</div>
       <br />
       <div class="chapter_txt">#DoNatNewChapter</div>
     </div>
