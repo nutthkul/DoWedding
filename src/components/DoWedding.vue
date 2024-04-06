@@ -7,8 +7,8 @@
       <div class="request_txt">With joyful hearts we invite you</div>
       <br />
       <div class="celeb_txt">TO CELEBRATE OUR WEDDING</div>
+      <div style="font-size: 2vw; font-weight: bold">02 JUNE 2024</div>
       <br />
-      <div style="font-size: 2vw; font-weight: 600">02 JUNE 2024</div>
       <br />
       <div class="chapter_txt">#DoNatNewChapter</div>
     </div>
@@ -121,9 +121,9 @@
     </v-card> -->
 
     <div class="wrapper_presence">
-      <div class="request_txt">HERE'S A SNEAK PEEK OF</div>
+      <div class="request_txt">TIMING OF THE DAY</div>
       <br />
-      <div class="celeb_txt">OUR SPECIAL DAY'S <br />SCHEDULE</div>
+      <div class="celeb_txt">OUR SPECIAL DAY’S <br />SCHEDULE</div>
 
       <div class="wrapper_grid pa-10" style="margin-bottom: 200px">
         <div class="img_icon">
@@ -342,7 +342,7 @@
         <br />สมาคมชาวไร่อ้อยเขต 6 กำแพงเพชร
       </div>
 
-      <div class="btn_google mb-16">
+      <div class="btn_google">
         <button
           onclick="window.open('https://maps.app.goo.gl/JNRwjb3ctpqVXBKK8?g_st=il', '_blank')"
         >
@@ -788,7 +788,7 @@ export default {
 }
 
 .wrapper_presence {
-  font-family: Nanum Myeongjo;
+  font-family: Sree Krushnadevaraya;
   text-align: center;
   margin-top: 10%;
   margin-bottom: 50px;
@@ -979,7 +979,7 @@ export default {
   text-align: right;
 
   top: 36%;
-  left: 85%;
+  left: 86%;
 
   position: absolute;
   transform: translate(-50%, -50%);
@@ -1018,7 +1018,7 @@ export default {
   text-align: left;
 
   bottom: 1%;
-  left: 25%;
+  left: 22%;
 
   position: absolute;
   transform: translate(-50%, -50%);
@@ -1027,15 +1027,12 @@ export default {
 .wrapper_profile {
   width: 100%;
   position: relative;
-
-  @media screen and (max-width: 1280px) {
-    padding: 10px 10px;
-  }
 }
 
 .wrapper_profile img {
   height: 1650px;
   width: 100%;
+
   object-fit: cover;
   object-position: center top;
 
@@ -1052,7 +1049,7 @@ export default {
   }
 
   @media screen and (max-width: 500px) {
-    height: 350px;
+    height: 400px;
     object-fit: cover;
     object-position: center top;
   }
@@ -1068,10 +1065,6 @@ export default {
   margin-top: 12px;
   border-radius: 12px !important;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-img {
-  border-radius: 12px !important;
 }
 
 .card_map {
@@ -1100,6 +1093,8 @@ img {
 }
 
 .img_slide {
+  border-radius: 12px !important;
+
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -1170,6 +1165,7 @@ img {
 
   @media only screen and (max-width: 1024px) {
     height: 45px;
+    margin-bottom: auto;
   }
 }
 
