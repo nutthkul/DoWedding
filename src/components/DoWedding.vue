@@ -7,7 +7,7 @@
       <div class="request_txt">With joyful hearts we invite you</div>
       <br />
       <div class="celeb_txt">TO CELEBRATE OUR WEDDING</div>
-      <div style="font-size: 2vw; font-weight: bold">02 JUNE 2024</div>
+      <div class="june02_txt">02 JUNE 2024</div>
       <br />
       <br />
       <div class="chapter_txt">#DoNatNewChapter</div>
@@ -121,49 +121,41 @@
     </v-card> -->
 
     <div class="wrapper_presence">
-      <div class="request_txt">TIMING OF THE DAY</div>
+      <div class="timing_txt">TIMING OF THE DAY</div>
       <br />
       <div class="celeb_txt">OUR SPECIAL DAY’S <br />SCHEDULE</div>
 
-      <div class="wrapper_grid pa-10" style="margin-bottom: 200px">
+      <div class="wrapper_grid">
         <div class="img_icon">
           <img src="/src/assets/iconWedding1.png" />
           <br />
+          <div class="time_iconTxt">08.09 AM</div>
           <div class="icon_txt">
-            08.09 AM
+            Khan maak
             <br />
-            Khan maak Procession
+            Processions
           </div>
         </div>
 
         <div class="img_icon">
           <img src="/src/assets/iconWedding2.png" />
           <br />
-          <div class="icon_txt">
-            09.09 AM
-            <br />
-            The Engagement
-          </div>
+          <div class="time_iconTxt">09.09 AM</div>
+          <div class="icon_txt">The Engagement</div>
         </div>
 
         <div class="img_icon">
           <img src="/src/assets/iconWedding3.png" />
           <br />
-          <div class="icon_txt">
-            09.39 AM
-            <br />
-            Tea Ceremony
-          </div>
+          <div class="time_iconTxt">09.39 AM</div>
+          <div class="icon_txt">Tea Ceremony</div>
         </div>
 
         <div class="img_icon">
           <img src="/src/assets/iconWedding4.png" />
           <br />
-          <div class="icon_txt">
-            18.00 AM
-            <br />
-            Wedding Ceremony
-          </div>
+          <div class="time_iconTxt">18.00 AM</div>
+          <div class="icon_txt">Wedding Ceremony</div>
         </div>
       </div>
     </div>
@@ -173,7 +165,7 @@
         <img class="img_bgDress" src="../assets/slidePic/22.jpeg" />
         <div class="wrapper_theme">
           <div class="wedding_theme_txt">WEDDING THEME</div>
-          <div class="dress_code_txt mb-16">#DRESS CODE</div>
+          <div class="dress_code_txt">#DRESS CODE</div>
           <div class="grid_theme1" v-if="!$vuetify.display.smAndDown">
             <div>
               <img class="img_theme" src="../assets/THEME3.png" />
@@ -258,14 +250,14 @@
       ></v-img>
     </v-card> -->
 
-    <div class="pa-16 pb-7 mb-1 mt-16">
+    <div class="pa-16 pb-7 mb-1">
       <span
         :style="
           $vuetify.display.smAndDown
-            ? ' font-size: 14px; font-weight: 400'
-            : ' font-size: 20px; font-weight: 400'
+            ? ' font-size: 12px; font-weight: 400'
+            : ' font-size: 25px; font-weight: 400'
         "
-        style="font-family: Sree Krushnadevaraya; font-weight: 400"
+        style="font-family: Sree Krushnadevaraya"
       >
         MEMORIES
       </span>
@@ -273,10 +265,10 @@
       <span
         :style="
           $vuetify.display.smAndDown
-            ? ' font-size: 20px; font-weight: 400'
-            : ' font-size: 40px; font-weight: 400'
+            ? ' font-size: 25px; font-weight: 400'
+            : ' font-size: 75px; font-weight: 400'
         "
-        style="font-family: Sree Krushnadevaraya; font-weight: 800"
+        style="font-family: Sree Krushnadevaraya"
         >OUR WEDDING GALLERY</span
       >
     </div>
@@ -284,7 +276,7 @@
     <div class="mb-10">
       <swiper
         :slides-per-view="$vuetify.display.smAndDown ? 3 : 5"
-        :spaceBetween="$vuetify.display.smAndDown ? 15 : 20"
+        :spaceBetween="$vuetify.display.smAndDown ? 15 : 30"
         :centeredSlides="false"
         :autoplay="{
           delay: 0,
@@ -313,17 +305,23 @@
 
     <div class="mt-16">
       <div
-        style="
-          font-size: 2.3vw;
-          font-family: Sree Krushnadevaraya;
-          margin-top: 15%;
+        :style="
+          $vuetify.display.smAndDown
+            ? ' font-size: 12px; font-weight: 400'
+            : ' font-size: 25px; font-weight: 400'
         "
+        style="font-family: Sree Krushnadevaraya; margin-top: 15%"
       >
         WE CAN’T WAIT TO SEE YOU!
       </div>
       <div
+        :style="
+          $vuetify.display.smAndDown
+            ? ' font-size: 32px; font-weight: 400'
+            : ' font-size: 75px; font-weight: 400'
+        "
         class="mb-16"
-        style="font-size: 6vw; font-family: Sree Krushnadevaraya"
+        style="font-family: Sree Krushnadevaraya"
       >
         THE VENUE
       </div>
@@ -331,12 +329,13 @@
         <img src="../assets/Vanueu.png" />
       </div>
       <div
-        class="mb-10 mt-6"
-        style="
-          font-size: 2.5vw;
-          font-family: Sree Krushnadevaraya;
-          font-weight: 400;
+        :style="
+          $vuetify.display.smAndDown
+            ? ' font-size: 14px; font-weight: 400'
+            : ' font-size: 25px; font-weight: 400'
         "
+        class="mb-10 mt-6"
+        style="font-family: Sree Krushnadevaraya"
       >
         Canegrowers Association of Region 6, Kamphaengphet
         <br />สมาคมชาวไร่อ้อยเขต 6 กำแพงเพชร
@@ -392,12 +391,24 @@
       <div class="img_support">
         <img src="../assets/27crop.jpeg" />
         <div class="support_txtImg">
-          <div style="font-size: 4vw; font-family: Sree Krushnadevaraya">
+          <div
+            :style="
+              $vuetify.display.smAndDown
+                ? ' font-size: 16px; font-weight: 400'
+                : ' font-size: 40px; font-weight: 400'
+            "
+            style="font-family: Sree Krushnadevaraya"
+          >
             To our family and friends
           </div>
           <div
+            :style="
+              $vuetify.display.smAndDown
+                ? ' font-size: 12px; font-weight: 400'
+                : ' font-size: 32px; font-weight: 400'
+            "
             class="mt-10"
-            style="font-size: 2.5vw; font-family: Sree Krushnadevaraya"
+            style="font-family: Sree Krushnadevaraya"
           >
             Thank you for your love, support, and for being a part of our
             special day. We love you all dearly.
@@ -408,12 +419,20 @@
               Doughnut & Nat
             </div>
             <br />
-            <div>
-              <div style="font-size: 2vw; font-family: Sree Krushnadevaraya">
+            <div class="margin_qr">
+              <div
+                class="mb-2"
+                :style="
+                  $vuetify.display.smAndDown
+                    ? ' font-size: 10px; font-weight: 400'
+                    : ' font-size: 25px; font-weight: 400'
+                "
+                style="font-family: Sree Krushnadevaraya"
+              >
                 Join in congratulating
               </div>
               <v-img
-                :width="$vuetify.display.smAndDown ? '30%' : '20%'"
+                :width="$vuetify.display.smAndDown ? '30%' : '30%'"
                 height="auto"
                 src="../assets/pp_qr.png"
                 cover
@@ -765,12 +784,28 @@ export default {
   }
 }
 
-.icon_txt {
-  font-size: 2.3vw;
-  font-weight: 600;
-
+.timing_txt {
+  font-size: 25px;
+  font-weight: 400;
   @media only screen and (max-width: 1280px) {
     font-size: 3vw;
+  }
+}
+
+.time_iconTxt {
+  font-size: 32px;
+  font-weight: 400;
+  @media only screen and (max-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
+.icon_txt {
+  font-size: 24px;
+  font-weight: 400;
+
+  @media only screen and (max-width: 1280px) {
+    font-size: 15px;
   }
 }
 
@@ -791,18 +826,22 @@ export default {
   font-family: Sree Krushnadevaraya;
   text-align: center;
   margin-top: 10%;
-  margin-bottom: 50px;
+  margin-bottom: 10%;
+  padding: 60px 0px 0px 0px;
+  @media only screen and (max-width: 1280px) {
+    padding: 40px 0px 0px 0px;
+    margin-top: auto;
+    margin-bottom: 10%;
+  }
 }
 
 .request_txt {
-  font-size: 1.7vw;
-  font-weight: 600;
+  font-size: 36px;
+  font-weight: 400;
   font-family: Nanum Myeongjo;
-  margin-top: 80px;
 
   @media only screen and (max-width: 1280px) {
-    font-size: 3.5vw;
-    margin-top: auto;
+    font-size: 12px;
   }
 }
 
@@ -816,7 +855,7 @@ export default {
 .wrapper_theme {
   position: absolute;
   top: 10% !important;
-  left: 12%;
+  left: 14%;
   justify-content: center;
 
   @media only screen and (max-width: 1240px) {
@@ -876,7 +915,7 @@ export default {
 
 .img_theme {
   padding: auto;
-  height: 210px;
+  height: 240px;
   margin-top: 20px;
   margin-right: 10px;
 
@@ -923,50 +962,58 @@ export default {
 
 .font_color {
   font-family: Nanum Myeongjo;
-  font-size: 3.3vw;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 400;
 
   @media only screen and (max-width: 1280px) {
-    font-size: 2vw;
+    font-size: 10px;
   }
 }
 
 .wedding_theme_txt {
-  font-size: 1.7vw;
-  font-weight: 900;
-  font-family: Nanum Myeongjo;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: Sree Krushnadevaraya;
   @media only screen and (max-width: 1280px) {
-    font-size: 3vw;
+    font-size: 12px;
   }
 }
 
 .dress_code_txt {
-  font-size: 4.7vw;
+  font-size: 75px;
   font-weight: 600;
   font-family: Nanum Myeongjo;
+  margin-bottom: 15%;
   @media only screen and (max-width: 1280px) {
-    font-size: 6vw;
+    font-size: 32px;
+    margin-bottom: auto;
+  }
+}
+
+.june02_txt {
+  font-size: 50px;
+  font-weight: 400;
+  @media only screen and (max-width: 1280px) {
+    font-size: 15px;
   }
 }
 
 .celeb_txt {
-  font-size: 4vw;
-  font-weight: 700;
-  /* @media only screen and (max-width: 1280px) {
-    font-size: 20px;
-  } */
+  font-size: 75px;
+  font-weight: 400;
+  @media only screen and (max-width: 1280px) {
+    font-size: 22px;
+  }
 }
 
 .chapter_txt {
-  font-size: 1vw;
-  font-weight: 600;
-  margin-top: 6%;
-  margin-bottom: 12.5%;
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 5%;
 
   @media only screen and (max-width: 1280px) {
-    font-size: 2.5vw;
+    font-size: 12px;
     margin-top: auto;
-    margin-bottom: auto;
   }
 }
 
@@ -1155,8 +1202,9 @@ export default {
 .btn_google button {
   font-family: Sree Krushnadevaraya;
 
-  width: 200px;
-  height: 70px;
+  width: 274px;
+  height: 51px;
+  font-size: 20px;
   color: #b9ab8e;
   border: 3px solid #b9ab8e;
   border-radius: 20px;
@@ -1164,7 +1212,10 @@ export default {
   margin-bottom: 100px;
 
   @media only screen and (max-width: 1024px) {
-    height: 45px;
+    width: 125px;
+    height: 32px;
+    font-size: 10px;
+
     margin-bottom: auto;
   }
 }
@@ -1174,7 +1225,7 @@ export default {
 .support_txtImg {
   color: white;
   text-align: center;
-  top: 52%;
+  top: 50%;
   left: 50%;
   margin-left: 10px;
   position: absolute;
@@ -1200,6 +1251,13 @@ export default {
 
   @media screen and (max-width: 1280px) {
     height: auto;
+  }
+}
+
+.margin_qr {
+  margin-top: 20%;
+  @media screen and (max-width: 1280px) {
+    margin-top: auto;
   }
 }
 </style>
