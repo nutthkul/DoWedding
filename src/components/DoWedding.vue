@@ -320,7 +320,6 @@
             ? ' font-size: 32px; font-weight: 400'
             : ' font-size: 75px; font-weight: 400'
         "
-        class="mb-16"
         style="font-family: Sree Krushnadevaraya"
       >
         THE VENUE
@@ -334,7 +333,7 @@
             ? ' font-size: 14px; font-weight: 400'
             : ' font-size: 25px; font-weight: 400'
         "
-        class="mb-10 mt-6"
+        class="mt-6"
         style="font-family: Sree Krushnadevaraya"
       >
         Canegrowers Association of Region 6, Kamphaengphet
@@ -858,24 +857,26 @@ export default {
   left: 14%;
   justify-content: center;
 
-  @media only screen and (max-width: 1240px) {
-    top: 10% !important;
-    left: 28% !important;
+  padding: 60px 0px 0px 0px;
+
+  @media only screen and (max-width: 1280px) {
+    top: 18% !important;
+    left: 38% !important;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    top: 12% !important;
+    left: 34% !important;
   }
 
   @media only screen and (max-width: 900px) {
     top: 10% !important;
-    left: 25% !important;
+    left: 28% !important;
   }
 
-  @media only screen and (max-width: 500px) {
-    top: 10% !important;
-    left: 10% !important;
-  }
-
-  @media only screen and (max-width: 400px) {
-    top: 10% !important;
-    left: 6% !important;
+  @media only screen and (max-width: 600px) {
+    top: 1% !important;
+    left: 8.5% !important;
   }
 }
 
@@ -1239,7 +1240,7 @@ export default {
 }
 
 .img_support {
-  margin-top: 100px;
+  margin-top: 30px;
   width: 100%;
   position: relative;
 }
@@ -1250,7 +1251,15 @@ export default {
   filter: invert(20%) saturate(140%) hue-rotate(0deg) brightness(100%);
 
   @media screen and (max-width: 1280px) {
-    height: auto;
+    height: 650px;
+  }
+
+  @media screen and (max-width: 900px) {
+    height: 340px;
+  }
+
+  @media screen and (max-width: 400px) {
+    height: 310px;
   }
 }
 
