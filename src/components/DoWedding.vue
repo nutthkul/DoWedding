@@ -4,11 +4,11 @@
       <v-img src="../assets/Banner.jpeg" class="mx-auto"></v-img>
     </div>
     <div class="wrapper_presence">
-      <div class="request_txt mt-15">With joyful hearts we invite you</div>
+      <div class="request_txt">With joyful hearts we invite you</div>
       <br />
       <div class="celeb_txt">TO CELEBRATE OUR WEDDING</div>
       <br />
-      <div class="request_txt mt-5">02 JUNE 2024</div>
+      <div style="font-size: 2vw; font-weight: ">02 JUNE 2024</div>
       <br />
       <div class="chapter_txt">#DoNatNewChapter</div>
     </div>
@@ -125,7 +125,7 @@
       <br />
       <div class="celeb_txt">OUR SPECIAL DAY'S <br />SCHEDULE</div>
 
-      <div class="wrapper_grid mb-16 pa-10">
+      <div class="wrapper_grid pa-10" style="margin-bottom: 200px">
         <div class="img_icon">
           <img src="/src/assets/iconWedding1.png" />
           <br />
@@ -258,14 +258,14 @@
       ></v-img>
     </v-card> -->
 
-    <div class="pa-16 pb-7 mb-10">
+    <div class="pa-16 pb-7 mb-1 mt-16">
       <span
         :style="
           $vuetify.display.smAndDown
-            ? ' font-size: 10px; font-weight: 400'
+            ? ' font-size: 14px; font-weight: 400'
             : ' font-size: 20px; font-weight: 400'
         "
-        style="font-family: 'Nanum Myeongjo', serif; font-weight: 400"
+        style="font-family: Sree Krushnadevaraya; font-weight: 400"
       >
         MEMORIES
       </span>
@@ -273,10 +273,10 @@
       <span
         :style="
           $vuetify.display.smAndDown
-            ? ' font-size: 18px; font-weight: 400'
-            : ' font-size: 38px; font-weight: 400'
+            ? ' font-size: 20px; font-weight: 400'
+            : ' font-size: 40px; font-weight: 400'
         "
-        style="font-family: 'Nanum Myeongjo', serif; font-weight: 800"
+        style="font-family: Sree Krushnadevaraya; font-weight: 800"
         >OUR WEDDING GALLERY</span
       >
     </div>
@@ -336,14 +336,11 @@
         <br />สมาคมชาวไร่อ้อยเขต 6 กำแพงเพชร
       </div>
 
-      <div class="btn_google mb-10">
-        <button>
-          <a
-            href="https://maps.app.goo.gl/JNRwjb3ctpqVXBKK8?g_st=il"
-            role="button"
-            style="text-decoration-line: none"
-            >Open Google Map</a
-          >
+      <div class="btn_google mb-16">
+        <button
+          onclick="window.open('https://maps.app.goo.gl/JNRwjb3ctpqVXBKK8?g_st=il', '_blank')"
+        >
+          Open Google Map
         </button>
       </div>
     </div>
@@ -399,7 +396,7 @@
             Thank you for your love, support, and for being a part of our
             special day. We love you all dearly.
             <br />
-            <div class="mt-16">
+            <div class="mt-12">
               With love,
               <br />
               Doughnut & Nat
@@ -795,9 +792,11 @@ export default {
   font-size: 1.7vw;
   font-weight: 600;
   font-family: Nanum Myeongjo;
+  margin-top: 80px;
 
   @media only screen and (max-width: 1280px) {
     font-size: 3.5vw;
+    margin-top: auto;
   }
 }
 
@@ -956,10 +955,12 @@ export default {
   font-size: 1vw;
   font-weight: 600;
   margin-top: 5%;
+  margin-bottom: 15%;
 
   @media only screen and (max-width: 1280px) {
     font-size: 2.5vw;
     margin-top: auto;
+    margin-bottom: auto;
   }
 }
 
@@ -1158,6 +1159,8 @@ img {
   color: #b9ab8e;
   border: 3px solid #b9ab8e;
   border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 
   @media only screen and (max-width: 1024px) {
     height: 45px;
@@ -1169,12 +1172,13 @@ img {
 .support_txtImg {
   color: white;
   text-align: center;
-  top: 40%;
+  top: 52%;
   left: 50%;
   margin-left: 10px;
   position: absolute;
   transform: translate(-50%, -50%);
-  opacity: 0.8 !important;
+  opacity: 0.9 !important;
+  text-shadow: 0px 0px 8px #0f0f0f;
 
   @media screen and (max-width: 1280px) {
     top: 50%;
