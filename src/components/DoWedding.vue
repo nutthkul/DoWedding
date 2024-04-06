@@ -954,8 +954,8 @@ export default {
 .chapter_txt {
   font-size: 1vw;
   font-weight: 600;
-  margin-top: 5%;
-  margin-bottom: 15%;
+  margin-top: 6%;
+  margin-bottom: 12.5%;
 
   @media only screen and (max-width: 1280px) {
     font-size: 2.5vw;
