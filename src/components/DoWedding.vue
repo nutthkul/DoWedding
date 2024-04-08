@@ -263,7 +263,7 @@
         :style="
           $vuetify.display.smAndDown
             ? ' font-size: 14px; font-weight: 400'
-            : ' font-size: 25px; font-weight: 400'
+            : ' font-size: 20px; font-weight: 400'
         "
         class="mt-6"
         style="font-family: Sree Krushnadevaraya"
@@ -688,14 +688,14 @@ export default {
 .wrapper_theme {
   position: absolute;
   top: 8% !important;
-  left: 14%;
+  left: 22%;
   justify-content: center;
 
   padding: 60px 0px 0px 0px;
 
   @media only screen and (max-width: 1280px) {
     top: 18% !important;
-    left: 38% !important;
+    left: 40% !important;
   }
 
   @media only screen and (max-width: 1024px) {
@@ -776,7 +776,7 @@ export default {
 .grid_theme1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr !important;
-  column-gap: 300px !important;
+  column-gap: 150px !important;
 
   justify-content: center;
 
@@ -788,7 +788,7 @@ export default {
 .grid_theme2 {
   display: grid;
   grid-template-columns: 2fr 2fr;
-  gap: 20px;
+  gap: 5px;
 }
 
 .grid_mobile {
