@@ -182,14 +182,14 @@
       ></v-img>
     </v-card> -->
 
-    <div class="memories pa-10 pb-7 mb-1">
+    <div class="pa-10 pb-7 mb-1">
       <span
         :style="
           $vuetify.display.smAndDown
             ? ' font-size: 12px; font-weight: 400'
             : ' font-size: 25px; font-weight: 400'
         "
-        style="font-family: Sree Krushnadevaraya"
+        style="font-family: Sree Krushnadevaraya; margin-bottom: 60px"
       >
         MEMORIES
       </span>
@@ -269,7 +269,8 @@
         style="font-family: Sree Krushnadevaraya"
       >
         Canegrowers Association of Region 6, Kamphaengphet
-        <br />สมาคมชาวไร่อ้อยเขต 6 กำแพงเพชร
+        <br />
+        <div style="font-family: kanit">สมาคมชาวไร่อ้อยเขต 6 กำแพงเพชร</div>
       </div>
 
       <div class="btn_google">
@@ -303,9 +304,11 @@
           class="mt-10"
           style="font-family: Sree Krushnadevaraya"
         >
-          Thank you for your love, support, and for being a part of our special
-          day. We love you all dearly.
+          Thank you for your love, support,
           <br />
+          and for being a part of our special day.
+          <br />
+          We love you all dearly.
           <div class="mt-12">
             With love,
             <br />
@@ -324,7 +327,7 @@
               Join in congratulating
             </div>
             <v-img
-              :width="$vuetify.display.smAndDown ? '25%' : '30%'"
+              :width="$vuetify.display.smAndDown ? '20%' : '20%'"
               height="auto"
               src="../assets/pp_qr.png"
               cover
@@ -611,7 +614,8 @@ export default {
   font-size: 25px;
   font-weight: 400;
   @media only screen and (max-width: 1280px) {
-    font-size: 3vw;
+    font-size: 12px;
+    font-weight: 500;
   }
 }
 
@@ -700,19 +704,25 @@ export default {
   }
 
   @media only screen and (max-width: 900px) {
-    top: 10% !important;
+    top: 5% !important;
     left: 28% !important;
   }
 
   @media only screen and (max-width: 600px) {
-    top: 1% !important;
-    left: 8.5% !important;
+    top: 0% !important;
+    left: 11% !important;
+  }
+
+  @media only screen and (max-width: 400px) {
+    top: 0% !important;
+    left: 8% !important;
   }
 }
 
 .img_bgDress {
-  height: 1250px;
+  height: 1350px;
   width: 100%;
+
   object-fit: cover;
   object-position: center bottom;
 
@@ -767,7 +777,6 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr !important;
   column-gap: 300px !important;
-  margin-top: 30px;
 
   justify-content: center;
 
@@ -786,7 +795,6 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr !important;
   column-gap: 10px !important;
-  margin-top: 30px;
 
   justify-content: center;
 }
@@ -805,8 +813,10 @@ export default {
   font-size: 25px;
   font-weight: 400;
   font-family: Sree Krushnadevaraya;
+  margin-bottom: 60px;
   @media only screen and (max-width: 1280px) {
     font-size: 12px;
+    margin-bottom: auto;
   }
 }
 
@@ -814,7 +824,7 @@ export default {
   font-size: 75px;
   font-weight: 600;
   font-family: Nanum Myeongjo;
-  margin-bottom: 15%;
+  margin-bottom: 86px;
   @media only screen and (max-width: 1280px) {
     font-size: 32px;
     margin-bottom: auto;
@@ -1078,6 +1088,8 @@ export default {
 .img_venue img {
   width: auto;
   object-fit: scale-down;
+
+  filter: invert(15%) saturate(140%) hue-rotate(0deg) brightness(100%);
 
   @media only screen and (max-width: 1024px) {
     height: auto;
