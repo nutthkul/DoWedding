@@ -306,9 +306,7 @@
         >
           Thank you for your love, support,
           <br />
-          and for being a part of our special day.
-          <br />
-          We love you all dearly.
+          and for being a part of our special day. We love you all dearly.
           <div class="mt-12">
             With love,
             <br />
@@ -1132,7 +1130,7 @@ export default {
   position: absolute;
   transform: translate(-50%, -50%);
   opacity: 0.9 !important;
-  text-shadow: 0px 0px 8px #0f0f0f;
+  text-shadow: 0px 4px 4px #230f00;
 
   @media screen and (max-width: 1280px) {
     top: 52%;
