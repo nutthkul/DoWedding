@@ -3,161 +3,93 @@
     <div>
       <v-img src="../assets/Banner.jpeg" class="mx-auto"></v-img>
     </div>
+
     <div class="wrapper_presence">
-      <div class="request_txt">With joyful hearts we invite you</div>
-      <br />
-      <div class="celeb_txt">TO CELEBRATE OUR WEDDING</div>
-      <div class="june02_txt">02 JUNE 2024</div>
-      <br />
-      <br />
-      <div class="chapter_txt">#DoNatNewChapter</div>
+      <v-row>
+        <v-col cols="12">
+          <div class="request_txt">With joyful hearts we invite you</div>
+        </v-col>
+        <v-col cols="12">
+          <div class="celeb_txt">TO CELEBRATE OUR WEDDING</div>
+        </v-col>
+        <v-col cols="12">
+          <div class="june02_txt">02 JUNE 2024</div>
+        </v-col>
+        <v-col cols="12">
+          <div class="chapter_txt">#DoNatNewChapter</div>
+        </v-col>
+      </v-row>
     </div>
 
     <div class="wrapper_profile">
-      <img src="../assets/slidePic/33.jpeg" />
+      <img class="img_2" src="../assets/newCosmatic/big-2.png" />
 
       <div class="nickname1_txtImg">
-        <div
-          style="
-            font-size: 9vw;
-            font-weight: 500;
-            color: transparent;
-            text-shadow: 0 0 2px #f6f6f6;
-          "
-        >
-          Doughnut
-        </div>
+        <div class="blur_txt">Doughnut</div>
       </div>
 
       <div class="nickname2_txtImg">
-        <div
-          style="
-            font-size: 9vw;
-            font-weight: 500;
-            color: transparent;
-            text-shadow: 0 0 2px #f6f6f6;
-          "
-        >
-          Nat
-        </div>
+        <div class="blur_txt">Nat</div>
       </div>
 
       <div class="doughnut_txtImg">
-        <div style="font-size: 4vw">Nutthapon</div>
+        <div class="nat_txtImg1">Nutthapon</div>
 
-        <div style="font-size: 4vw">Kulkrittayarat</div>
+        <div class="nat_txtImg2">Kulkrittayarat</div>
       </div>
-      <div class="nat_txtImg">
-        <div style="font-size: 4vw">Nutchita</div>
 
-        <div style="font-size: 4vw">Saksupawattanakul</div>
+      <div class="nat_txtImg">
+        <div class="nat_txtImg1">Nutchita</div>
+
+        <div class="nat_txtImg2">Saksupawattanakul</div>
       </div>
     </div>
 
-    <!-- <v-card
-      :class="$vuetify.display.smAndDown ? 'pa-3' : 'pa-10'"
-      style="background-color: #f6f6f6"
-      flat
-    >
-      <v-card :class="$vuetify.display.smAndDown ? 'pa-3' : 'pa-10'" flat>
-        <v-row class="mt-4 mb-4">
-          <v-col cols="6" class="pa-4">
-            <v-card
-              :class="
-                $vuetify.display.smAndDown
-                  ? 'pa-2 card_rounded'
-                  : 'pa-6 card_rounded'
-              "
-              rounded
-              height="100%"
-              elevation="3"
-            >
-              <v-img
-                class="title_img img_hover_zoom1"
-                src="/src/assets/slidePic/35.jpeg"
-                :style="
-                  $vuetify.display.smAndDown
-                    ? 'display: flex; align-items: flex-end'
-                    : ''
-                "
-              >
-                <div class="wrapper_txt_title_img">
-                  <span class="name_profile_txt mt-10 mb-10"
-                    >Nutthapon Kulkrittayarat</span
-                  >
-                </div>
-              </v-img>
-            </v-card>
-          </v-col>
-          <v-col cols="6" class="pa-4">
-            <v-card
-              :class="
-                $vuetify.display.smAndDown
-                  ? 'pa-2 card_rounded'
-                  : 'pa-6 card_rounded'
-              "
-              height="100%"
-              elevation="3"
-            >
-              <v-img
-                class="title_img img_hover_zoom1"
-                src="/src/assets/slidePic/36.jpeg"
-                :style="
-                  $vuetify.display.smAndDown
-                    ? 'display: flex; align-items: flex-end'
-                    : ''
-                "
-              >
-                <div class="wrapper_txt_title_img">
-                  <span class="name_profile_txt mt-10 mb-10 font-weight-bold"
-                    >Nutchita Saksupawattanakul</span
-                  >
-                </div>
-              </v-img>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-card>
-    </v-card> -->
-
     <div class="wrapper_presence">
-      <div class="timing_txt">TIMING OF THE DAY</div>
-      <br />
-      <div class="celeb_txt">OUR SPECIAL DAY’S <br />SCHEDULE</div>
+      <v-row>
+        <v-col cols="12">
+          <div class="timing_txt">TIMING OF THE DAY</div>
+        </v-col>
+        <v-col cols="12">
+          <div class="celeb_txt">OUR SPECIAL DAY’S</div>
+          <div class="celeb_txt1">SCHEDULE</div>
+        </v-col>
+        <v-col cols="12">
+          <div class="wrapper_grid">
+            <div class="img_icon">
+              <img src="/src/assets/iconWedding1.png" />
+              <br />
+              <div class="time_iconTxt">08.09 AM</div>
+              <div class="icon_txt">
+                Khan maak
+                <br />
+                Processions
+              </div>
+            </div>
 
-      <div class="wrapper_grid">
-        <div class="img_icon">
-          <img src="/src/assets/iconWedding1.png" />
-          <br />
-          <div class="time_iconTxt">08.09 AM</div>
-          <div class="icon_txt">
-            Khan maak
-            <br />
-            Processions
+            <div class="img_icon">
+              <img src="/src/assets/iconWedding2.png" />
+              <br />
+              <div class="time_iconTxt">09.09 AM</div>
+              <div class="icon_txt">The Engagement</div>
+            </div>
+
+            <div class="img_icon">
+              <img src="/src/assets/iconWedding3.png" />
+              <br />
+              <div class="time_iconTxt">09.39 AM</div>
+              <div class="icon_txt">Tea Ceremony</div>
+            </div>
+
+            <div class="img_icon">
+              <img src="/src/assets/iconWedding4.png" />
+              <br />
+              <div class="time_iconTxt">18.00 AM</div>
+              <div class="icon_txt">Wedding Ceremony</div>
+            </div>
           </div>
-        </div>
-
-        <div class="img_icon">
-          <img src="/src/assets/iconWedding2.png" />
-          <br />
-          <div class="time_iconTxt">09.09 AM</div>
-          <div class="icon_txt">The Engagement</div>
-        </div>
-
-        <div class="img_icon">
-          <img src="/src/assets/iconWedding3.png" />
-          <br />
-          <div class="time_iconTxt">09.39 AM</div>
-          <div class="icon_txt">Tea Ceremony</div>
-        </div>
-
-        <div class="img_icon">
-          <img src="/src/assets/iconWedding4.png" />
-          <br />
-          <div class="time_iconTxt">18.00 AM</div>
-          <div class="icon_txt">Wedding Ceremony</div>
-        </div>
-      </div>
+        </v-col>
+      </v-row>
     </div>
 
     <div>
@@ -250,7 +182,7 @@
       ></v-img>
     </v-card> -->
 
-    <div class="pa-10 pb-7 mb-1">
+    <div class="memories pa-10 pb-7 mb-1">
       <span
         :style="
           $vuetify.display.smAndDown
@@ -348,114 +280,6 @@
         </button>
       </div>
     </div>
-
-    <!-- <v-row class="pa-5">
-      <v-col cols="12" md="12" lg="12" xl="12">
-        <v-card class="mx-auto mb-15 card_map" max-width="1000">
-          <div class="mb-5 mt-5">
-            <span
-              :style="
-                $vuetify.display.smAndDown
-                  ? ' font-size: 22px; font-weight: 400'
-                  : ' font-size: 38px; font-weight: 400'
-              "
-              style="font-family: 'Nanum Myeongjo', serif; font-weight: 550"
-              >Click here to get the map</span
-            >
-          </div>
-          <a
-            href="https://maps.app.goo.gl/JNRwjb3ctpqVXBKK8?g_st=il"
-            target="_blank"
-          >
-            <v-img
-              height="auto"
-              src="../assets/mapKhampheang6.jpeg"
-              cover
-              class="mx-auto img_map"
-            ></v-img>
-          </a>
-
-          <v-card-title class="mt-8 txt_map">
-            Canegrowers Association of Region 6 Kamphaengphet
-          </v-card-title>
-
-          <v-card-title class="mb-8 txt_map">
-            สมาคมชาวไร่อ้อยเขต 6 กำแพงเพชร
-          </v-card-title>
-        </v-card>
-      </v-col>
-    </v-row> -->
-
-    <!-- <div style="background-color: #f6f6f6" class="pt-10">
-      <span
-        :style="
-          $vuetify.display.smAndDown
-            ? ' font-size: 22px; font-weight: 400'
-            : ' font-size: 38px; font-weight: 400'
-        "
-        style="font-family: 'Nanum Myeongjo', serif; font-weight: 500"
-        >Support for our wedding</span
-      >
-      <v-row class="pa-5 pb-0" style="background-color: #f6f6f6">
-        <v-col cols="12" md="12" lg="12" xl="12" class="pb-0">
-          <v-card
-            flat=""
-            class="mx-auto mb-15 card_map1"
-            max-width="1000"
-            style="background-color: #f6f6f6"
-          >
-            <v-img
-              :width="$vuetify.display.smAndDown ? '80%' : '30%'"
-              height="auto"
-              src="../assets/pp_qr.png"
-              cover
-              class="mx-auto img_map1"
-            ></v-img>
-
-            <span
-              :style="
-                $vuetify.display.smAndDown
-                  ? ' font-size: 18px; font-weight: 400'
-                  : ' font-size: 22px; font-weight: 400'
-              "
-              style="font-family: 'Nanum Myeongjo', serif; font-weight: 500"
-              >PROMTPAY : xxx-x-x8897-x
-              <br />
-              <span
-                :style="
-                  $vuetify.display.smAndDown
-                    ? ' font-size: 18px; font-weight: 400'
-                    : ' font-size: 22px; font-weight: 400'
-                "
-                style="font-family: 'Nanum Myeongjo', serif; font-weight: 500"
-              >
-                น.ส. ณัฐชิตา ศักดิ์สุภาวัฒนกุล
-              </span>
-            </span>
-          </v-card>
-        </v-col>
-      </v-row>
-    </div> -->
-
-    <!-- <v-card class="mx-auto mb-15 card_map" max-width="1000">
-      <a
-        href="https://maps.app.goo.gl/JNRwjb3ctpqVXBKK8?g_st=il"
-        target="_blank"
-      >
-        <v-img
-          height="auto"
-          src="../assets/mapKhampheang6.jpeg"
-          cover
-          class="mx-auto img_map"
-        ></v-img>
-      </a>
-
-      <v-card-title class="mt-8">
-        Canegrowers Association of Region 6 Kamphaengphet
-      </v-card-title>
-
-      <v-card-title class="mb-8"> สมาคมชาวไร่อ้อยเขต 6 กำแพงเพชร </v-card-title>
-    </v-card> -->
 
     <div class="img_support">
       <img src="../assets/27crop.jpeg" />
@@ -770,13 +594,16 @@ export default {
 }
 
 .img_icon img {
-  padding: auto;
+  /* padding: auto;
   height: 120px;
   margin-top: 20px;
-  margin-right: 10px;
+  margin-right: 10px; */
+  height: 120px;
+  margin-top: 20px;
 
   @media only screen and (max-width: 1280px) {
     height: 80px;
+    margin-top: 20px;
   }
 }
 
@@ -808,9 +635,8 @@ export default {
 .wrapper_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 30px !important;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 80px;
+  margin-right: 80px;
   justify-content: center;
 
   @media only screen and (max-width: 1280px) {
@@ -821,19 +647,26 @@ export default {
 .wrapper_presence {
   font-family: Sree Krushnadevaraya;
   text-align: center;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  padding: 144px 0px 0px 0px;
+  /* margin-top: 10%;
+  margin-bottom: 10%; */
+  /* padding: 144px 0px 0px 0px; */
+  display: flex;
+  align-items: center;
+  max-height: 860px !important;
+  height: 860px !important;
+
   @media only screen and (max-width: 1280px) {
-    padding: 40px 0px 0px 0px;
-    margin-top: auto;
+    /* padding: 40px 0px 0px 0px;
+    margin-top: auto; */
+    margin-top: 10%;
     margin-bottom: 10%;
+    height: auto !important;
   }
 }
 
 .request_txt {
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 500;
   font-family: Nanum Myeongjo;
 
   @media only screen and (max-width: 1280px) {
@@ -1004,6 +837,16 @@ export default {
   }
 }
 
+.celeb_txt1 {
+  font-size: 75px;
+  font-weight: 400;
+  margin-top: -25px !important;
+  @media only screen and (max-width: 1280px) {
+    margin-top: auto !important;
+    font-size: 22px;
+  }
+}
+
 .chapter_txt {
   font-size: 25px;
   font-weight: 400;
@@ -1023,11 +866,12 @@ export default {
   color: white;
   text-align: right;
 
-  top: 36%;
+  top: 38%;
   left: 86%;
 
   position: absolute;
   transform: translate(-50%, -50%);
+  font-size: 4vw;
 }
 
 .nickname1_txtImg {
@@ -1062,11 +906,56 @@ export default {
   color: white;
   text-align: left;
 
-  bottom: 1%;
+  bottom: 2%;
   left: 22%;
 
   position: absolute;
   transform: translate(-50%, -50%);
+
+  font-size: 4vw;
+  @media only screen and (max-width: 1280px) {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.nat_txtImg1 {
+  margin-top: 40px;
+
+  @media only screen and (max-width: 1280px) {
+    margin-top: 0px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 10px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    margin-top: 2px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    margin-top: 5px;
+  }
+}
+
+.nat_txtImg2 {
+  margin-top: -40px;
+
+  @media only screen and (max-width: 1280px) {
+    margin-top: -15px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    margin-top: -13px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    margin-top: -10px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    margin-top: -7px;
+  }
 }
 
 .wrapper_profile {
@@ -1204,10 +1093,12 @@ export default {
   height: 51px;
   font-size: 20px;
   color: #b9ab8e;
-  border: 3px solid #b9ab8e;
+  border: 1px solid #b9ab8e;
   border-radius: 20px;
   margin-top: 50px;
   margin-bottom: 100px;
+
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
   @media only screen and (max-width: 1024px) {
     width: 125px;
@@ -1267,5 +1158,26 @@ export default {
   @media screen and (max-width: 1280px) {
     margin-top: auto;
   }
+}
+
+.img_2 {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.blur_txt {
+  font-size: 9vw;
+  font-weight: 500;
+  color: transparent;
+  text-shadow: 0 0 2px #f6f6f6;
+
+  @media screen and (max-width: 900px) {
+    color: white;
+    filter: blur(0.5px);
+    text-shadow: 0 0 1px #f6f6f6;
+  }
+}
+
+.memories {
 }
 </style>
