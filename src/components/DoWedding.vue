@@ -1,15 +1,20 @@
 <template>
   <v-responsive class="align-center text-center fill-height bgColor">
     <div>
-      <v-img src="../assets/Banner.jpeg" class="mx-auto"></v-img>
+      <v-img
+        lazy-src="../assets/Banner.jpeg"
+        src="../assets/Banner.jpeg"
+        class="mx-auto"
+      ></v-img>
     </div>
 
     <div class="wrapper_presence">
-      <v-row>
-        <v-col cols="12">
+      <v-row class="mb-6 mt-10">
+        <v-col cols="12" class="pb-0">
+          <!-- <div class="request_txt">WITH JOYFUL HEARTS WE INVITE YOU</div> -->
           <div class="request_txt">With joyful hearts we invite you</div>
         </v-col>
-        <v-col cols="12">
+        <v-col cols="12" class="pb-0">
           <div class="celeb_txt">TO CELEBRATE OUR WEDDING</div>
         </v-col>
         <v-col cols="12">
@@ -46,7 +51,7 @@
     </div>
 
     <div class="wrapper_presence">
-      <v-row>
+      <v-row class="py-12">
         <v-col cols="12">
           <div class="timing_txt">TIMING OF THE DAY</div>
         </v-col>
@@ -94,7 +99,8 @@
 
     <div>
       <div class="img_dress">
-        <img class="img_bgDress" src="../assets/slidePic/22.jpeg" />
+        <!-- <img class="img_bgDress" src="../assets/slidePic/22.jpeg" /> -->
+        <img class="img_bgDress" src="../assets/slidePic/Frame13.png" />
         <div class="wrapper_theme">
           <div class="wedding_theme_txt">WEDDING THEME</div>
           <div class="dress_code_txt">#DRESS CODE</div>
@@ -119,13 +125,13 @@
           </div>
 
           <div class="grid_theme2" v-if="!$vuetify.display.smAndDown">
-            <div>
+            <div style="">
               <img class="img_theme" src="../assets/THEME4.png" />
               <br />
               <div class="font_color">#EBBCC4</div>
             </div>
 
-            <div>
+            <div style="">
               <img class="img_theme" src="../assets/THEME5.png" />
               <br />
               <div class="font_color">#B52F35</div>
@@ -182,7 +188,7 @@
       ></v-img>
     </v-card> -->
 
-    <div class="pa-10 pb-7 mb-1">
+    <div class="pa-10 pb-7 mb-1" style="margin-top: 50px">
       <span
         :style="
           $vuetify.display.smAndDown
@@ -193,6 +199,7 @@
       >
         MEMORIES
       </span>
+      <br />
       <br />
       <span
         :style="
@@ -243,6 +250,7 @@
             : ' font-size: 25px; font-weight: 400'
         "
         style="font-family: Sree Krushnadevaraya; margin-top: 15%"
+        class="mb-5"
       >
         WE CAN’T WAIT TO SEE YOU!
       </div>
@@ -265,7 +273,7 @@
             ? ' font-size: 14px; font-weight: 400'
             : ' font-size: 20px; font-weight: 400'
         "
-        class="mt-6"
+        class="mt-0"
         style="font-family: Sree Krushnadevaraya"
       >
         Canegrowers Association of Region 6, Kamphaengphet
@@ -295,19 +303,23 @@
         >
           To our family and friends
         </div>
+        <br />
         <div
           :style="
             $vuetify.display.smAndDown
               ? ' font-size: 12px; font-weight: 400'
               : ' font-size: 32px; font-weight: 400'
           "
-          class="mt-10"
+          class="mt-0"
           style="font-family: Sree Krushnadevaraya"
         >
-          Thank you for your love, support,
+          Thank you for your love, support,and for being a part of our special
+          day.
           <br />
-          and for being a part of our special day. We love you all dearly.
-          <div class="mt-12">
+          We love you all dearly.
+          <br />
+          <br />
+          <div class="mt-0">
             With love,
             <br />
             Doughnut & Nat
@@ -325,7 +337,7 @@
               Join in congratulating
             </div>
             <v-img
-              :width="$vuetify.display.smAndDown ? '20%' : '20%'"
+              :width="$vuetify.display.smAndDown ? '20%' : '10%'"
               height="auto"
               src="../assets/pp_qr.png"
               cover
@@ -361,7 +373,7 @@ export default {
 
     useHead({
       // Can be static or computed
-      title: "Donut & Nat",
+      title: "Doughnut & Nat",
       meta: [
         {
           name: `Wedding`,
@@ -654,8 +666,8 @@ export default {
   /* padding: 144px 0px 0px 0px; */
   display: flex;
   align-items: center;
-  max-height: 860px !important;
-  height: 860px !important;
+  max-height: 980px !important;
+  height: 980px !important;
 
   @media only screen and (max-width: 1280px) {
     /* padding: 40px 0px 0px 0px;
@@ -669,7 +681,8 @@ export default {
 .request_txt {
   font-size: 36px;
   font-weight: 500;
-  font-family: Nanum Myeongjo;
+  /* font-family: Nanum Myeongjo; */
+  font-family: Sree Krushnadevaraya;
 
   @media only screen and (max-width: 1280px) {
     font-size: 12px;
@@ -719,11 +732,12 @@ export default {
 
 .img_bgDress {
   height: 1350px;
+  /* height: 1240px; */
   width: 100%;
 
   object-fit: cover;
   object-position: center bottom;
-
+  filter: invert(0%) saturate(80%) hue-rotate(0deg) brightness(105%);
   @media only screen and (max-width: 1280px) {
     height: 600px;
 
@@ -784,9 +798,11 @@ export default {
 }
 
 .grid_theme2 {
+  margin-top: 20px;
   display: grid;
-  grid-template-columns: 2fr 2fr;
-  gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px;
+  column-gap: 0px !important;
 }
 
 .grid_mobile {
@@ -811,10 +827,10 @@ export default {
   font-size: 25px;
   font-weight: 400;
   font-family: Sree Krushnadevaraya;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   @media only screen and (max-width: 1280px) {
     font-size: 12px;
-    margin-bottom: auto;
+    /* margin-bottom: auto; */
   }
 }
 
@@ -874,38 +890,12 @@ export default {
   color: white;
   text-align: right;
 
-  top: 38%;
+  top: 35%;
   left: 86%;
 
   position: absolute;
   transform: translate(-50%, -50%);
   font-size: 4vw;
-}
-
-.nickname1_txtImg {
-  font-family: Playfair Display;
-
-  color: white;
-  text-align: left;
-
-  top: 25%;
-  left: 77%;
-
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-
-.nickname2_txtImg {
-  font-family: Playfair Display;
-
-  color: white;
-  text-align: left;
-
-  bottom: 10%;
-  left: 10%;
-
-  position: absolute;
-  transform: translate(-50%, -50%);
 }
 
 .nat_txtImg {
@@ -1091,8 +1081,7 @@ export default {
 
   @media only screen and (max-width: 1024px) {
     height: auto;
-    padding: 35px 30px;
-
+    padding: 35px 30px 0px 30px;
     width: 100%;
   }
 }
@@ -1105,7 +1094,7 @@ export default {
   color: #b9ab8e;
   border: 1px solid #b9ab8e;
   border-radius: 20px;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 100px;
 
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -1126,7 +1115,7 @@ export default {
   text-align: center;
   top: 50%;
   left: 50%;
-
+  width: 90vw;
   position: absolute;
   transform: translate(-50%, -50%);
   opacity: 0.9 !important;
@@ -1164,9 +1153,10 @@ export default {
 }
 
 .margin_qr {
-  margin-top: 20%;
+  margin-top: 10%;
   @media screen and (max-width: 1280px) {
-    margin-top: auto;
+    /* margin-top: auto; */
+    margin-top: 5%;
   }
 }
 
@@ -1175,8 +1165,33 @@ export default {
   height: auto !important;
 }
 
+.nickname1_txtImg {
+  font-family: Playfair Display;
+
+  color: white;
+  text-align: left;
+
+  top: 26%;
+  left: 79%;
+
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.nickname2_txtImg {
+  font-family: Playfair Display;
+
+  color: white;
+  text-align: left;
+
+  bottom: 10%;
+  left: 10%;
+
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
 .blur_txt {
-  font-size: 9vw;
+  font-size: 8vw;
   font-weight: 500;
   color: transparent;
   text-shadow: 0 0 2px #f6f6f6;
