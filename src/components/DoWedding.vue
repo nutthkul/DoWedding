@@ -96,7 +96,7 @@
         </v-col>
       </v-row>
     </div>
-
+<!-- push space -->
     <div>
       <div class="img_dress">
         <!-- <img class="img_bgDress" src="../assets/slidePic/22.jpeg" /> -->
